@@ -42,6 +42,11 @@ LRESULT GameWndProc(HWND hWnd, UINT Msg, WPARAM wParam, LPARAM lParam){
                 break;
             }
             case ATTACK_BUTTON:{
+            for(int i = 2;i < 4;i++){
+                for(int j = 0;j < 4;j++){
+                        InvalidateRect(*window.GetCDisplay(i*4+j),NULL,true);
+                }
+            }
                 if(counter%2 !=0){
                     HP2 -= Game_Board.Attack(FIRST_PLAYER);
                     cout<<HP2<<endl;
