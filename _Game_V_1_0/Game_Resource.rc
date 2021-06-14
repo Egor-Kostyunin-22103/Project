@@ -1,0 +1,17 @@
+GFRAME BITMAP E:\Project\_Game_V_1_0\Images\Frame.bmp
+GBACKGROUND BITMAP E:\Project\_Game_V_1_0\Images\BackGround.bmp
+SGBACKGROUND BITMAP E:\Project\_Game_V_1_0\Images\SBackGround.bmp
+REDSTONE BITMAP E:\Project\_Game_V_1_0\Images\Red_Stone.bmp
+REDSTONEBUTTON BITMAP E:\Project\_Game_V_1_0\Images\Red_Stone_Button.bmp
+BLUESTONE BITMAP E:\Project\_Game_V_1_0\Images\Blue_Stone.bmp
+BLUESTONEBUTTON BITMAP E:\Project\_Game_V_1_0\Images\Blue_Stone_Button.bmp
+GRAYSTONE BITMAP E:\Project\_Game_V_1_0\Images\Gray_Stone.bmp
+GRAYSTONEBUTTON BITMAP E:\Project\_Game_V_1_0\Images\Gray_Stone_Button.bmp
+GREENSTONE BITMAP E:\Project\_Game_V_1_0\Images\Green_Stone.bmp
+GREENSTONEBUTTON BITMAP E:\Project\_Game_V_1_0\Images\Green_Stone_Button.bmp
+GICON ICON E:\Project\_Game_V_1_0\Icon.ico
+GCURSOR CURSOR E:\Project\_Game_V_1_0\Cursor.cur
+HELPBUTTON BITMAP E:\Project\_Game_V_1_0\Images\Help_Button.bmp
+DELETEBUTTON BITMAP E:\Project\_Game_V_1_0\Images\Delete_Button.bmp
+ATTACKBUTTON BITMAP E:\Project\_Game_V_1_0\Images\Attack_Button.bmp
+NEWGAMEBUTTON BITMAP E:\Project\_Game_V_1_0\Images\New_Game_Button.bmp
