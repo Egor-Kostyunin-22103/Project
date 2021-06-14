@@ -1,0 +1,439 @@
+\begin{theindex}
+
+  \item {\_Game\_V\_1\_0/Game\_Constants\_V\_1\_0.hpp}, \hyperpage{23}
+  \item {\_Game\_V\_1\_0/Game\_Lib\_V\_1\_0.hpp}, \hyperpage{23}
+  \item {\_Game\_V\_1\_0/Graph/Create\_Display.cpp}, \hyperpage{23}
+  \item {\_Game\_V\_1\_0/Graph/Create\_GButton.cpp}, \hyperpage{23}
+  \item {\_Game\_V\_1\_0/Graph/Create\_GProgress\_Bar.cpp}, 
+		\hyperpage{24}
+  \item {\_Game\_V\_1\_0/Graph/DisplayWndProc.cpp}, \hyperpage{24}
+  \item {\_Game\_V\_1\_0/Graph/Game\_Graph\_V\_1\_0.hpp}, 
+		\hyperpage{26}
+  \item {\_Game\_V\_1\_0/Graph/Game\_Proc.cpp}, \hyperpage{26}
+  \item {\_Game\_V\_1\_0/Graph/Game\_Proc\_V\_1\_0.hpp}, \hyperpage{29}
+  \item {\_Game\_V\_1\_0/Graph/Game\_Window.cpp}, \hyperpage{30}
+  \item {\_Game\_V\_1\_0/Graph/GetCDisplay.cpp}, \hyperpage{30}
+  \item {\_Game\_V\_1\_0/Graph/GetGWindow.cpp}, \hyperpage{30}
+  \item {\_Game\_V\_1\_0/Graph/RegisterGWindowClass.cpp}, 
+		\hyperpage{30}
+  \item {\_Game\_V\_1\_0/Graph/Set\_GButton\_Image.cpp}, \hyperpage{30}
+  \item {\_Game\_V\_1\_0/Graph\_Constants\_V\_1\_0.h}, \hyperpage{31}
+  \item {\_Game\_V\_1\_0/Types/Attack.cpp}, \hyperpage{37}
+  \item {\_Game\_V\_1\_0/Types/Board\_V\_1\_0.cpp}, \hyperpage{39}
+  \item {\_Game\_V\_1\_0/Types/Board\_V\_1\_0.h}, \hyperpage{39}
+  \item {\_Game\_V\_1\_0/Types/Game\_Types\_V\_1\_0.hpp}, 
+		\hyperpage{40}
+  \item {\_Game\_V\_1\_0/Types/Get\_Stone.cpp}, \hyperpage{40}
+  \item {\_Game\_V\_1\_0/Types/Get\_Type.cpp}, \hyperpage{40}
+  \item {\_Game\_V\_1\_0/Types/Put\_Stone.cpp}, \hyperpage{41}
+  \item {\_Game\_V\_1\_0/Types/Set\_Stone.cpp}, \hyperpage{41}
+  \item {\_Game\_V\_1\_0/Types/Stone\_V\_1\_0.cpp}, \hyperpage{43}
+  \item {\_Game\_V\_1\_0/Types/Stone\_V\_1\_0.h}, \hyperpage{43}
+  \item {\_Game\_V\_1\_0/Types/Take\_Stone\_from\_Board.cpp}, 
+		\hyperpage{43}
+  \item {\_Game\_V\_1\_0/Types/cell.h}, \hyperpage{39}
+  \item {\_Game\_V\_1\_0/Types/damage.h}, \hyperpage{40}
+  \item {\_Game\_V\_1\_0/Types/player.h}, \hyperpage{40}
+  \item {\_Game\_V\_1\_0/Types/stone\_type.h}, \hyperpage{42}
+  \item {\_Game\_V\_1\_0/main.cpp}, \hyperpage{36}
+  \item {\_cell}, \hyperpage{5}
+    \subitem {Cell}, \hyperpage{5}
+    \subitem {Next}, \hyperpage{5}
+  \item {$\sim$Board}
+    \subitem {Board}, \hyperpage{6}
+  \item {$\sim$Stone}
+    \subitem {Stone}, \hyperpage{21}
+
+  \indexspace
+
+  \item {Actions}
+    \subitem {Attack.cpp}, \hyperpage{37}
+  \item {Actions\_Init}
+    \subitem {Attack.cpp}, \hyperpage{37}
+  \item {AGDisplay}
+    \subitem {GameWindow}, \hyperpage{17}
+  \item {AIR}
+    \subitem {stone\_type.h}, \hyperpage{42}
+  \item {Attack}
+    \subitem {Board}, \hyperpage{6}
+  \item {Attack.cpp}
+    \subitem {Actions}, \hyperpage{37}
+    \subitem {Actions\_Init}, \hyperpage{37}
+    \subitem {B\_Flag}, \hyperpage{38}
+    \subitem {G\_Flag}, \hyperpage{38}
+    \subitem {Gr\_Flag}, \hyperpage{38}
+    \subitem {HP1}, \hyperpage{38}
+    \subitem {HP2}, \hyperpage{38}
+    \subitem {R\_Flag}, \hyperpage{38}
+  \item {ATTACK\_BUTTON}
+    \subitem {Graph\_Constants\_V\_1\_0.h}, \hyperpage{32}
+  \item {ATTACK\_DISPLAY}
+    \subitem {Graph\_Constants\_V\_1\_0.h}, \hyperpage{32}
+  \item {AttackSButton}
+    \subitem {GameWindow}, \hyperpage{17}
+
+  \indexspace
+
+  \item {B\_Flag}
+    \subitem {Attack.cpp}, \hyperpage{38}
+  \item {BLUE\_S\_BUTTON}
+    \subitem {Graph\_Constants\_V\_1\_0.h}, \hyperpage{32}
+  \item {BlueSButton}
+    \subitem {GameWindow}, \hyperpage{17}
+  \item {Board}, \hyperpage{6}
+    \subitem {$\sim$Board}, \hyperpage{6}
+    \subitem {Attack}, \hyperpage{6}
+    \subitem {Board}, \hyperpage{6}
+    \subitem {Cells}, \hyperpage{8}
+    \subitem {Get\_Stone}, \hyperpage{7}
+    \subitem {Put\_Stone}, \hyperpage{7}
+    \subitem {Take\_Stone\_from\_Board}, \hyperpage{8}
+  \item {BOARD\_SIZE}
+    \subitem {cell.h}, \hyperpage{39}
+  \item {Brush}
+    \subitem {DisplayWndProc.cpp}, \hyperpage{25}
+
+  \indexspace
+
+  \item {Cell}
+    \subitem {\_cell}, \hyperpage{5}
+  \item {cell}
+    \subitem {cell.h}, \hyperpage{39}
+  \item {cell.h}
+    \subitem {BOARD\_SIZE}, \hyperpage{39}
+    \subitem {cell}, \hyperpage{39}
+  \item {Cell\_Display\_Array}
+    \subitem {GameWindow}, \hyperpage{17}
+  \item {Cells}
+    \subitem {Board}, \hyperpage{8}
+  \item {CELLSIZE}
+    \subitem {Graph\_Constants\_V\_1\_0.h}, \hyperpage{32}
+  \item {ChooseStoneFlag}
+    \subitem {DisplayWndProc.cpp}, \hyperpage{25}
+  \item {counter}
+    \subitem {Game\_Proc.cpp}, \hyperpage{27}
+  \item {Create\_Cell\_Display}
+    \subitem {GameWindow}, \hyperpage{11}
+  \item {Create\_GButton}
+    \subitem {GameWindow}, \hyperpage{12}
+  \item {Create\_GProgress\_Bar}
+    \subitem {GameWindow}, \hyperpage{13}
+  \item {Create\_Small\_Display}
+    \subitem {GameWindow}, \hyperpage{14}
+
+  \indexspace
+
+  \item {damage}
+    \subitem {damage.h}, \hyperpage{40}
+  \item {damage.h}
+    \subitem {damage}, \hyperpage{40}
+  \item {dcl}
+    \subitem {GameWindow}, \hyperpage{17}
+  \item {DEFENSE\_DISPLAY}
+    \subitem {Graph\_Constants\_V\_1\_0.h}, \hyperpage{32}
+  \item {DELETE\_BUTTON}
+    \subitem {Graph\_Constants\_V\_1\_0.h}, \hyperpage{32}
+  \item {Delete\_SImage}
+    \subitem {DisplayWndProc.cpp}, \hyperpage{24}
+  \item {DeleteSButton}
+    \subitem {GameWindow}, \hyperpage{18}
+  \item {DGDisplay}
+    \subitem {GameWindow}, \hyperpage{18}
+  \item {DISPLAY\_LCLICK}
+    \subitem {Graph\_Constants\_V\_1\_0.h}, \hyperpage{33}
+  \item {DISPLAY\_RCLICK}
+    \subitem {Graph\_Constants\_V\_1\_0.h}, \hyperpage{33}
+  \item {DisplayWndProc}
+    \subitem {DisplayWndProc.cpp}, \hyperpage{24}
+    \subitem {Game\_Proc\_V\_1\_0.hpp}, \hyperpage{29}
+  \item {DisplayWndProc.cpp}
+    \subitem {Brush}, \hyperpage{25}
+    \subitem {ChooseStoneFlag}, \hyperpage{25}
+    \subitem {Delete\_SImage}, \hyperpage{24}
+    \subitem {DisplayWndProc}, \hyperpage{24}
+    \subitem {Game\_Board}, \hyperpage{25}
+    \subitem {GWindow\_Info}, \hyperpage{25}
+    \subitem {id}, \hyperpage{25}
+    \subitem {Load\_SImage}, \hyperpage{24}
+    \subitem {r}, \hyperpage{25}
+    \subitem {S}, \hyperpage{25}
+    \subitem {Stone\_Image}, \hyperpage{26}
+    \subitem {window}, \hyperpage{26}
+
+  \indexspace
+
+  \item {EARTH}
+    \subitem {stone\_type.h}, \hyperpage{42}
+  \item {EnumGProc}
+    \subitem {Game\_Proc.cpp}, \hyperpage{27}
+
+  \indexspace
+
+  \item {FIRE}
+    \subitem {stone\_type.h}, \hyperpage{42}
+  \item {FIRST\_PLAYER}
+    \subitem {player.h}, \hyperpage{41}
+
+  \indexspace
+
+  \item {G\_Flag}
+    \subitem {Attack.cpp}, \hyperpage{38}
+  \item {Game\_Board}
+    \subitem {DisplayWndProc.cpp}, \hyperpage{25}
+    \subitem {Game\_Proc.cpp}, \hyperpage{28}
+  \item {GAME\_BUTTON\_STYLE}
+    \subitem {Graph\_Constants\_V\_1\_0.h}, \hyperpage{33}
+  \item {Game\_Proc.cpp}
+    \subitem {counter}, \hyperpage{27}
+    \subitem {EnumGProc}, \hyperpage{27}
+    \subitem {Game\_Board}, \hyperpage{28}
+    \subitem {GameWndProc}, \hyperpage{27}
+    \subitem {GMap}, \hyperpage{28}
+    \subitem {HP1}, \hyperpage{28}
+    \subitem {HP2}, \hyperpage{28}
+    \subitem {Load\_SImage}, \hyperpage{27}
+    \subitem {S}, \hyperpage{28}
+    \subitem {window}, \hyperpage{28}
+    \subitem {WinFlag1}, \hyperpage{28}
+    \subitem {WinFlag2}, \hyperpage{29}
+  \item {Game\_Proc\_V\_1\_0.hpp}
+    \subitem {DisplayWndProc}, \hyperpage{29}
+    \subitem {GameWndProc}, \hyperpage{29}
+    \subitem {LRESULT}, \hyperpage{29}
+  \item {GameWindow}, \hyperpage{8}
+    \subitem {AGDisplay}, \hyperpage{17}
+    \subitem {AttackSButton}, \hyperpage{17}
+    \subitem {BlueSButton}, \hyperpage{17}
+    \subitem {Cell\_Display\_Array}, \hyperpage{17}
+    \subitem {Create\_Cell\_Display}, \hyperpage{11}
+    \subitem {Create\_GButton}, \hyperpage{12}
+    \subitem {Create\_GProgress\_Bar}, \hyperpage{13}
+    \subitem {Create\_Small\_Display}, \hyperpage{14}
+    \subitem {dcl}, \hyperpage{17}
+    \subitem {DeleteSButton}, \hyperpage{18}
+    \subitem {DGDisplay}, \hyperpage{18}
+    \subitem {GameWindow}, \hyperpage{10}
+    \subitem {gbcl}, \hyperpage{18}
+    \subitem {GetCDisplay}, \hyperpage{15}
+    \subitem {GetGWindow}, \hyperpage{15}
+    \subitem {GetHPBar}, \hyperpage{15}
+    \subitem {GraySButton}, \hyperpage{18}
+    \subitem {GreenSButton}, \hyperpage{18}
+    \subitem {HP1Bar}, \hyperpage{18}
+    \subitem {HP2Bar}, \hyperpage{19}
+    \subitem {MainWindow}, \hyperpage{19}
+    \subitem {RedSButton}, \hyperpage{19}
+    \subitem {RegisterGWindowClass}, \hyperpage{16}
+    \subitem {sdcl}, \hyperpage{19}
+    \subitem {Set\_GButton\_Image}, \hyperpage{16}
+    \subitem {SGDisplay}, \hyperpage{19}
+    \subitem {wcl}, \hyperpage{19}
+  \item {GameWndProc}
+    \subitem {Game\_Proc.cpp}, \hyperpage{27}
+    \subitem {Game\_Proc\_V\_1\_0.hpp}, \hyperpage{29}
+  \item {gbcl}
+    \subitem {GameWindow}, \hyperpage{18}
+  \item {GBUTTON\_CLASS}
+    \subitem {Graph\_Constants\_V\_1\_0.h}, \hyperpage{33}
+  \item {GDISPLAY\_CLASS}
+    \subitem {Graph\_Constants\_V\_1\_0.h}, \hyperpage{33}
+  \item {GDISPLAY\_STYLE}
+    \subitem {Graph\_Constants\_V\_1\_0.h}, \hyperpage{33}
+  \item {Get\_Stone}
+    \subitem {Board}, \hyperpage{7}
+  \item {Get\_Type}
+    \subitem {Stone}, \hyperpage{21}
+  \item {GetCDisplay}
+    \subitem {GameWindow}, \hyperpage{15}
+  \item {GetGWindow}
+    \subitem {GameWindow}, \hyperpage{15}
+  \item {GetHPBar}
+    \subitem {GameWindow}, \hyperpage{15}
+  \item {GMap}
+    \subitem {Game\_Proc.cpp}, \hyperpage{28}
+  \item {GOFFSET}
+    \subitem {Graph\_Constants\_V\_1\_0.h}, \hyperpage{33}
+  \item {GPROGRESS\_BAR\_STYLE}
+    \subitem {Graph\_Constants\_V\_1\_0.h}, \hyperpage{34}
+  \item {Gr\_Flag}
+    \subitem {Attack.cpp}, \hyperpage{38}
+  \item {Graph\_Constants\_V\_1\_0.h}
+    \subitem {ATTACK\_BUTTON}, \hyperpage{32}
+    \subitem {ATTACK\_DISPLAY}, \hyperpage{32}
+    \subitem {BLUE\_S\_BUTTON}, \hyperpage{32}
+    \subitem {CELLSIZE}, \hyperpage{32}
+    \subitem {DEFENSE\_DISPLAY}, \hyperpage{32}
+    \subitem {DELETE\_BUTTON}, \hyperpage{32}
+    \subitem {DISPLAY\_LCLICK}, \hyperpage{33}
+    \subitem {DISPLAY\_RCLICK}, \hyperpage{33}
+    \subitem {GAME\_BUTTON\_STYLE}, \hyperpage{33}
+    \subitem {GBUTTON\_CLASS}, \hyperpage{33}
+    \subitem {GDISPLAY\_CLASS}, \hyperpage{33}
+    \subitem {GDISPLAY\_STYLE}, \hyperpage{33}
+    \subitem {GOFFSET}, \hyperpage{33}
+    \subitem {GPROGRESS\_BAR\_STYLE}, \hyperpage{34}
+    \subitem {GRAY\_S\_BUTTON}, \hyperpage{34}
+    \subitem {GREEN\_S\_BUTTON}, \hyperpage{34}
+    \subitem {HP1\_BAR}, \hyperpage{34}
+    \subitem {HP2\_BAR}, \hyperpage{34}
+    \subitem {MAIN\_GWINDOW\_CLASS}, \hyperpage{34}
+    \subitem {MAIN\_WINDOW\_STYLE}, \hyperpage{35}
+    \subitem {RED\_S\_BUTTON}, \hyperpage{35}
+    \subitem {SGDISPLAY\_CLASS}, \hyperpage{35}
+    \subitem {STONEBUTTONSIZE}, \hyperpage{35}
+    \subitem {SUPPORT\_DISPLAY}, \hyperpage{35}
+  \item {GRAY\_S\_BUTTON}
+    \subitem {Graph\_Constants\_V\_1\_0.h}, \hyperpage{34}
+  \item {GraySButton}
+    \subitem {GameWindow}, \hyperpage{18}
+  \item {GREEN\_S\_BUTTON}
+    \subitem {Graph\_Constants\_V\_1\_0.h}, \hyperpage{34}
+  \item {GreenSButton}
+    \subitem {GameWindow}, \hyperpage{18}
+  \item {GWindow\_Info}
+    \subitem {DisplayWndProc.cpp}, \hyperpage{25}
+
+  \indexspace
+
+  \item {HP1}
+    \subitem {Attack.cpp}, \hyperpage{38}
+    \subitem {Game\_Proc.cpp}, \hyperpage{28}
+  \item {HP1\_BAR}
+    \subitem {Graph\_Constants\_V\_1\_0.h}, \hyperpage{34}
+  \item {HP1Bar}
+    \subitem {GameWindow}, \hyperpage{18}
+  \item {HP2}
+    \subitem {Attack.cpp}, \hyperpage{38}
+    \subitem {Game\_Proc.cpp}, \hyperpage{28}
+  \item {HP2\_BAR}
+    \subitem {Graph\_Constants\_V\_1\_0.h}, \hyperpage{34}
+  \item {HP2Bar}
+    \subitem {GameWindow}, \hyperpage{19}
+
+  \indexspace
+
+  \item {id}
+    \subitem {DisplayWndProc.cpp}, \hyperpage{25}
+
+  \indexspace
+
+  \item {Load\_SImage}
+    \subitem {DisplayWndProc.cpp}, \hyperpage{24}
+    \subitem {Game\_Proc.cpp}, \hyperpage{27}
+  \item {LRESULT}
+    \subitem {Game\_Proc\_V\_1\_0.hpp}, \hyperpage{29}
+
+  \indexspace
+
+  \item {main.cpp}
+    \subitem {msg}, \hyperpage{36}
+    \subitem {window}, \hyperpage{36}
+    \subitem {WinFlag1}, \hyperpage{36}
+    \subitem {WinFlag2}, \hyperpage{37}
+    \subitem {WinMain}, \hyperpage{36}
+  \item {MAIN\_GWINDOW\_CLASS}
+    \subitem {Graph\_Constants\_V\_1\_0.h}, \hyperpage{34}
+  \item {MAIN\_WINDOW\_STYLE}
+    \subitem {Graph\_Constants\_V\_1\_0.h}, \hyperpage{35}
+  \item {MainWindow}
+    \subitem {GameWindow}, \hyperpage{19}
+  \item {msg}
+    \subitem {main.cpp}, \hyperpage{36}
+
+  \indexspace
+
+  \item {Next}
+    \subitem {\_cell}, \hyperpage{5}
+  \item {NOINIT}
+    \subitem {stone\_type.h}, \hyperpage{42}
+
+  \indexspace
+
+  \item {player}
+    \subitem {player.h}, \hyperpage{41}
+  \item {player.h}
+    \subitem {FIRST\_PLAYER}, \hyperpage{41}
+    \subitem {player}, \hyperpage{41}
+    \subitem {SECOND\_PLAYER}, \hyperpage{41}
+  \item {Put\_Stone}
+    \subitem {Board}, \hyperpage{7}
+
+  \indexspace
+
+  \item {r}
+    \subitem {DisplayWndProc.cpp}, \hyperpage{25}
+  \item {R\_Flag}
+    \subitem {Attack.cpp}, \hyperpage{38}
+  \item {RED\_S\_BUTTON}
+    \subitem {Graph\_Constants\_V\_1\_0.h}, \hyperpage{35}
+  \item {RedSButton}
+    \subitem {GameWindow}, \hyperpage{19}
+  \item {RegisterGWindowClass}
+    \subitem {GameWindow}, \hyperpage{16}
+
+  \indexspace
+
+  \item {S}
+    \subitem {DisplayWndProc.cpp}, \hyperpage{25}
+    \subitem {Game\_Proc.cpp}, \hyperpage{28}
+  \item {sdcl}
+    \subitem {GameWindow}, \hyperpage{19}
+  \item {SECOND\_PLAYER}
+    \subitem {player.h}, \hyperpage{41}
+  \item {Set\_GButton\_Image}
+    \subitem {GameWindow}, \hyperpage{16}
+  \item {Set\_Stone}
+    \subitem {Stone}, \hyperpage{21}
+  \item {SGDisplay}
+    \subitem {GameWindow}, \hyperpage{19}
+  \item {SGDISPLAY\_CLASS}
+    \subitem {Graph\_Constants\_V\_1\_0.h}, \hyperpage{35}
+  \item {Stone}, \hyperpage{20}
+    \subitem {$\sim$Stone}, \hyperpage{21}
+    \subitem {Get\_Type}, \hyperpage{21}
+    \subitem {Set\_Stone}, \hyperpage{21}
+    \subitem {Stone}, \hyperpage{20}
+    \subitem {Type}, \hyperpage{21}
+  \item {Stone\_Image}
+    \subitem {DisplayWndProc.cpp}, \hyperpage{26}
+  \item {stone\_type}
+    \subitem {stone\_type.h}, \hyperpage{43}
+  \item {stone\_type.h}
+    \subitem {AIR}, \hyperpage{42}
+    \subitem {EARTH}, \hyperpage{42}
+    \subitem {FIRE}, \hyperpage{42}
+    \subitem {NOINIT}, \hyperpage{42}
+    \subitem {stone\_type}, \hyperpage{43}
+    \subitem {WATER}, \hyperpage{42}
+  \item {STONEBUTTONSIZE}
+    \subitem {Graph\_Constants\_V\_1\_0.h}, \hyperpage{35}
+  \item {SUPPORT\_DISPLAY}
+    \subitem {Graph\_Constants\_V\_1\_0.h}, \hyperpage{35}
+
+  \indexspace
+
+  \item {Take\_Stone\_from\_Board}
+    \subitem {Board}, \hyperpage{8}
+  \item {Type}
+    \subitem {Stone}, \hyperpage{21}
+
+  \indexspace
+
+  \item {WATER}
+    \subitem {stone\_type.h}, \hyperpage{42}
+  \item {wcl}
+    \subitem {GameWindow}, \hyperpage{19}
+  \item {window}
+    \subitem {DisplayWndProc.cpp}, \hyperpage{26}
+    \subitem {Game\_Proc.cpp}, \hyperpage{28}
+    \subitem {main.cpp}, \hyperpage{36}
+  \item {WinFlag1}
+    \subitem {Game\_Proc.cpp}, \hyperpage{28}
+    \subitem {main.cpp}, \hyperpage{36}
+  \item {WinFlag2}
+    \subitem {Game\_Proc.cpp}, \hyperpage{29}
+    \subitem {main.cpp}, \hyperpage{37}
+  \item {WinMain}
+    \subitem {main.cpp}, \hyperpage{36}
+
+\end{theindex}

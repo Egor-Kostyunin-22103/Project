@@ -1,0 +1,150 @@
+\hypertarget{class_board}{}\doxysection{Класс Board}
+\label{class_board}\index{Board@{Board}}
+
+
+{\ttfamily \#include $<$Board\+\_\+\+V\+\_\+1\+\_\+0.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_board_a4a921995fafd073473af465b11ff5e1c}{Board}} (int Board\+\_\+\+Map\mbox{[}\mbox{\hyperlink{cell_8h_a1db39eb31d1315ce982608fe25587b6d}{BOARD\+\_\+\+SIZE}}\mbox{]})
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_board}{Board}} -\/ Определяет Связи Между Клетками \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_board_aae5d26dc7a0e575992864cf67f7db3d9}{Put\+\_\+\+Stone}} (\mbox{\hyperlink{class_stone}{Stone}} \mbox{\hyperlink{_game___proc_8cpp_a3ee0cae35f4a8e5f94d6e9bf6c632e31}{S}}, int Pos, \mbox{\hyperlink{player_8h_a498a179ab24cb2296ce8aad0665e1082}{player}} Player)
+\begin{DoxyCompactList}\small\item\em Put\+\_\+\+Stone. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_board_a57d9d00bd66b2d492eb07d18e3e20b50}{Take\+\_\+\+Stone\+\_\+from\+\_\+\+Board}} (int Pos, \mbox{\hyperlink{player_8h_a498a179ab24cb2296ce8aad0665e1082}{player}} Player)
+\begin{DoxyCompactList}\small\item\em Take\+\_\+\+Stone\+\_\+from\+\_\+\+Board. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{damage_8h_a46373ac17376bc9583d44c71e0c01885}{damage}} \mbox{\hyperlink{class_board_af0f670f0748ee60cd6a09b19bd232f17}{Attack}} (\mbox{\hyperlink{player_8h_a498a179ab24cb2296ce8aad0665e1082}{player}} Player)
+\begin{DoxyCompactList}\small\item\em Attack. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_stone}{Stone}} $\ast$ \mbox{\hyperlink{class_board_adebc1d97775f2429ba19dc960b1159c6}{Get\+\_\+\+Stone}} (int Pos, \mbox{\hyperlink{player_8h_a498a179ab24cb2296ce8aad0665e1082}{player}} Player)
+\begin{DoxyCompactList}\small\item\em Get\+\_\+\+Stone. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_board_af73f45730119a1fd8f6670f53f959e68}{$\sim$\+Board}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{cell_8h_ad6b456a4ed0f0bf756ed9cb348353fa3}{cell}} \mbox{\hyperlink{class_board_a62aab1257efa209aef1293a37254e994}{Cells}} \mbox{[}\mbox{\hyperlink{cell_8h_a1db39eb31d1315ce982608fe25587b6d}{BOARD\+\_\+\+SIZE}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Доска \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_board_a4a921995fafd073473af465b11ff5e1c}\label{class_board_a4a921995fafd073473af465b11ff5e1c}} 
+\index{Board@{Board}!Board@{Board}}
+\index{Board@{Board}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{Board()}{Board()}}
+{\footnotesize\ttfamily Board\+::\+Board (\begin{DoxyParamCaption}\item[{int}]{Board\+\_\+\+Map\mbox{[}\+BOARD\+\_\+\+SIZE\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_board}{Board}} -\/ Определяет Связи Между Клетками 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em Board\+\_\+\+Map} & -\/ Карта Связей \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_board_af73f45730119a1fd8f6670f53f959e68}\label{class_board_af73f45730119a1fd8f6670f53f959e68}} 
+\index{Board@{Board}!````~Board@{$\sim$Board}}
+\index{````~Board@{$\sim$Board}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{$\sim$Board()}{~Board()}}
+{\footnotesize\ttfamily Board\+::$\sim$\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_board_af0f670f0748ee60cd6a09b19bd232f17}\label{class_board_af0f670f0748ee60cd6a09b19bd232f17}} 
+\index{Board@{Board}!Attack@{Attack}}
+\index{Attack@{Attack}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{Attack()}{Attack()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{damage_8h_a46373ac17376bc9583d44c71e0c01885}{damage}} Board\+::\+Attack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{player_8h_a498a179ab24cb2296ce8aad0665e1082}{player}}}]{Player }\end{DoxyParamCaption})}
+
+
+
+Attack. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em Player} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_board_adebc1d97775f2429ba19dc960b1159c6}\label{class_board_adebc1d97775f2429ba19dc960b1159c6}} 
+\index{Board@{Board}!Get\_Stone@{Get\_Stone}}
+\index{Get\_Stone@{Get\_Stone}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{Get\_Stone()}{Get\_Stone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_stone}{Stone}} $\ast$ Board\+::\+Get\+\_\+\+Stone (\begin{DoxyParamCaption}\item[{int}]{Pos,  }\item[{\mbox{\hyperlink{player_8h_a498a179ab24cb2296ce8aad0665e1082}{player}}}]{Player }\end{DoxyParamCaption})}
+
+
+
+Get\+\_\+\+Stone. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em Pos} & \\
+\hline
+{\em Player} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_board_aae5d26dc7a0e575992864cf67f7db3d9}\label{class_board_aae5d26dc7a0e575992864cf67f7db3d9}} 
+\index{Board@{Board}!Put\_Stone@{Put\_Stone}}
+\index{Put\_Stone@{Put\_Stone}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{Put\_Stone()}{Put\_Stone()}}
+{\footnotesize\ttfamily void Board\+::\+Put\+\_\+\+Stone (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_stone}{Stone}}}]{S,  }\item[{int}]{Pos,  }\item[{\mbox{\hyperlink{player_8h_a498a179ab24cb2296ce8aad0665e1082}{player}}}]{Player }\end{DoxyParamCaption})}
+
+
+
+Put\+\_\+\+Stone. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em S} & \\
+\hline
+{\em Pos} & \\
+\hline
+{\em Player} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_board_a57d9d00bd66b2d492eb07d18e3e20b50}\label{class_board_a57d9d00bd66b2d492eb07d18e3e20b50}} 
+\index{Board@{Board}!Take\_Stone\_from\_Board@{Take\_Stone\_from\_Board}}
+\index{Take\_Stone\_from\_Board@{Take\_Stone\_from\_Board}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{Take\_Stone\_from\_Board()}{Take\_Stone\_from\_Board()}}
+{\footnotesize\ttfamily void Board\+::\+Take\+\_\+\+Stone\+\_\+from\+\_\+\+Board (\begin{DoxyParamCaption}\item[{int}]{Pos,  }\item[{\mbox{\hyperlink{player_8h_a498a179ab24cb2296ce8aad0665e1082}{player}}}]{Player }\end{DoxyParamCaption})}
+
+
+
+Take\+\_\+\+Stone\+\_\+from\+\_\+\+Board. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em Pos} & \\
+\hline
+{\em Player} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Данные класса}
+\mbox{\Hypertarget{class_board_a62aab1257efa209aef1293a37254e994}\label{class_board_a62aab1257efa209aef1293a37254e994}} 
+\index{Board@{Board}!Cells@{Cells}}
+\index{Cells@{Cells}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{Cells}{Cells}}
+{\footnotesize\ttfamily \mbox{\hyperlink{cell_8h_ad6b456a4ed0f0bf756ed9cb348353fa3}{cell}} Board\+::\+Cells\mbox{[}\mbox{\hyperlink{cell_8h_a1db39eb31d1315ce982608fe25587b6d}{BOARD\+\_\+\+SIZE}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Доска 
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+Game\+\_\+\+V\+\_\+1\+\_\+0/\+Types/\mbox{\hyperlink{_board___v__1__0_8h}{Board\+\_\+\+V\+\_\+1\+\_\+0.\+h}}\item 
+\+\_\+\+Game\+\_\+\+V\+\_\+1\+\_\+0/\+Types/\mbox{\hyperlink{_attack_8cpp}{Attack.\+cpp}}\item 
+\+\_\+\+Game\+\_\+\+V\+\_\+1\+\_\+0/\+Types/\mbox{\hyperlink{_board___v__1__0_8cpp}{Board\+\_\+\+V\+\_\+1\+\_\+0.\+cpp}}\item 
+\+\_\+\+Game\+\_\+\+V\+\_\+1\+\_\+0/\+Types/\mbox{\hyperlink{_get___stone_8cpp}{Get\+\_\+\+Stone.\+cpp}}\item 
+\+\_\+\+Game\+\_\+\+V\+\_\+1\+\_\+0/\+Types/\mbox{\hyperlink{_put___stone_8cpp}{Put\+\_\+\+Stone.\+cpp}}\item 
+\+\_\+\+Game\+\_\+\+V\+\_\+1\+\_\+0/\+Types/\mbox{\hyperlink{_take___stone__from___board_8cpp}{Take\+\_\+\+Stone\+\_\+from\+\_\+\+Board.\+cpp}}\end{DoxyCompactItemize}

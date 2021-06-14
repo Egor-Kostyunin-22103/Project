@@ -1,0 +1,757 @@
+\hypertarget{class_game_window}{}\doxysection{Класс Game\+Window}
+\label{class_game_window}\index{GameWindow@{GameWindow}}
+
+
+Класс Окна Игры.  
+
+
+
+
+{\ttfamily \#include $<$Game\+\_\+\+Graph\+\_\+\+V\+\_\+1\+\_\+0.\+hpp$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_window_a81f2f6fea59b4723569c591756328163}{Game\+Window}} ()
+\begin{DoxyCompactList}\small\item\em Конструктор \end{DoxyCompactList}\item 
+HWND $\ast$ \mbox{\hyperlink{class_game_window_acbab862e4e4489e280704dfc52ff0267}{Get\+GWindow}} ()
+\begin{DoxyCompactList}\small\item\em Get\+GWindow -\/ Возвращает Указатель на Главное Окно \end{DoxyCompactList}\item 
+HWND $\ast$ \mbox{\hyperlink{class_game_window_ab49907929587c54159661dd751bae8dd}{Get\+CDisplay}} (int Number)
+\begin{DoxyCompactList}\small\item\em Get\+CDisplay -\/ Возвращает Указатель на Дисплей Клетки \end{DoxyCompactList}\item 
+HWND $\ast$ \mbox{\hyperlink{class_game_window_aac20446e1d7c089f9c655d16a31c118f}{Get\+HPBar}} (bool Number)
+\begin{DoxyCompactList}\small\item\em Get\+HPBar. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_game_window_a99cf2400dc42baa60509aa468bc3ae49}{Register\+GWindow\+Class}} (WNDCLASSA $\ast$Window\+Class, LPSTR GWindow\+Class\+Name, GWNDPROC GWnd\+Proc, LPSTR GBack\+Ground)
+\begin{DoxyCompactList}\small\item\em Register\+GWindow\+Class -\/ Регестрирует Класс Окна \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_game_window_a761c6f7a4865c596d58d1aaf6a54b883}{Create\+\_\+\+Cell\+\_\+\+Display}} (HWND $\ast$Cell\+\_\+\+Display, HWND $\ast$p\+Wnd, HMENU \mbox{\hyperlink{_display_wnd_proc_8cpp_a7441ef0865bcb3db9b8064dd7375c1ea}{id}}, int xpos, int ypos)
+\begin{DoxyCompactList}\small\item\em Create\+\_\+\+Cell\+\_\+\+Display -\/ Создает Дисплей Клетки \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_game_window_a58a651cce1ad0eb1d0a10ad21a985286}{Create\+\_\+\+Small\+\_\+\+Display}} (HWND $\ast$Display, HWND $\ast$p\+Wnd, HMENU \mbox{\hyperlink{_display_wnd_proc_8cpp_a7441ef0865bcb3db9b8064dd7375c1ea}{id}}, int xpos, int ypos)
+\begin{DoxyCompactList}\small\item\em Create\+\_\+\+Small\+\_\+\+Display -\/ Создает Маленький Дисплей \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_game_window_a4cf5e62cc439926af88ff322d63981b6}{Create\+\_\+\+GButton}} (HWND $\ast$Button, HWND $\ast$p\+Wnd, HMENU \mbox{\hyperlink{_display_wnd_proc_8cpp_a7441ef0865bcb3db9b8064dd7375c1ea}{id}}, int xpos, int ypos, int w, int h)
+\begin{DoxyCompactList}\small\item\em Create\+\_\+\+GButton -\/ Создает Кнопку \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_game_window_acc023854fccab46ca87f02704d9d3093}{Create\+\_\+\+GButton}} (HWND $\ast$Button, HWND $\ast$p\+Wnd, HMENU \mbox{\hyperlink{_display_wnd_proc_8cpp_a7441ef0865bcb3db9b8064dd7375c1ea}{id}}, int xpos, int ypos)
+\begin{DoxyCompactList}\small\item\em Create\+\_\+\+GButton -\/ Создает Кнопку \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_game_window_a7249c96604b36f3883d81b471b19bb3b}{Set\+\_\+\+GButton\+\_\+\+Image}} (HWND $\ast$Button, LPCSTR Image\+Name)
+\begin{DoxyCompactList}\small\item\em Set\+\_\+\+GButton\+\_\+\+Image -\/ Устанавливает Изображение на Кнопку \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_game_window_af2f4cf2cf75eb7efedb0bcc4d4514239}{Create\+\_\+\+GProgress\+\_\+\+Bar}} (HWND $\ast$Progress\+Bar, HWND $\ast$p\+Wnd, HMENU \mbox{\hyperlink{_display_wnd_proc_8cpp_a7441ef0865bcb3db9b8064dd7375c1ea}{id}}, int xpos, int ypos, int w, int h)
+\begin{DoxyCompactList}\small\item\em Create\+\_\+\+GProgress\+\_\+\+Bar -\/ Создает Прогресс Бар \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+WNDCLASSA \mbox{\hyperlink{class_game_window_a8bb8c69e0614ff49298f89ddebbdb73d}{wcl}}
+\begin{DoxyCompactList}\small\item\em WNDCLASSA wcl -\/ класс главного окна \end{DoxyCompactList}\item 
+WNDCLASSA \mbox{\hyperlink{class_game_window_af7ba9dc0d43a4d840faadf1288990f25}{dcl}}
+\begin{DoxyCompactList}\small\item\em WNDCLASSA dcl -\/ класс дисплея клетки \end{DoxyCompactList}\item 
+WNDCLASSA \mbox{\hyperlink{class_game_window_aea399cb25c01948e71436b5db6a863e9}{sdcl}}
+\begin{DoxyCompactList}\small\item\em WNDCLASSA sdcl -\/ класс маленького дисплея \end{DoxyCompactList}\item 
+WNDCLASSA \mbox{\hyperlink{class_game_window_a9d319c12847d6413f968e750956b602c}{gbcl}}
+\begin{DoxyCompactList}\small\item\em WNDCLASSA gbcl -\/ класс кнопки(Прим. все элементы управления в win\+API так же являются окнами) \end{DoxyCompactList}\item 
+HWND \mbox{\hyperlink{class_game_window_ae0a4c7d33196c7836b236a11bcae788f}{Main\+Window}}
+\begin{DoxyCompactList}\small\item\em HWND Main\+Window -\/ главное окно \end{DoxyCompactList}\item 
+HWND \mbox{\hyperlink{class_game_window_a77da13e65e60de4853b1525839a9f637}{Cell\+\_\+\+Display\+\_\+\+Array}} \mbox{[}16\mbox{]}
+\begin{DoxyCompactList}\small\item\em $<$ \end{DoxyCompactList}\item 
+HWND \mbox{\hyperlink{class_game_window_aee42510d6e94adb07dae1c66c5983438}{AGDisplay}}
+\begin{DoxyCompactList}\small\item\em HWND AGDisplay -\/ малый дисплей 1. \end{DoxyCompactList}\item 
+HWND \mbox{\hyperlink{class_game_window_a9de4bed2b27bafdffcc37f3d3e6a6c92}{DGDisplay}}
+\begin{DoxyCompactList}\small\item\em HWND DGDisplay -\/ малый дисплей 2. \end{DoxyCompactList}\item 
+HWND \mbox{\hyperlink{class_game_window_a7f61d064ed0a0087b3778b305e5f9817}{SGDisplay}}
+\begin{DoxyCompactList}\small\item\em HWND SGDisplay -\/ малый дисплей 3. \end{DoxyCompactList}\item 
+HWND \mbox{\hyperlink{class_game_window_ae283fb077a46ff2d0defd6b4c0997a4f}{Delete\+SButton}}
+\begin{DoxyCompactList}\small\item\em HWND Delete\+SButton -\/ кнопка удаления камней (Прим. удаляет все камни на половине текущего игрока) \end{DoxyCompactList}\item 
+HWND \mbox{\hyperlink{class_game_window_ad17c52057e92850a9c30bb1b6d65eb4a}{Attack\+SButton}}
+\begin{DoxyCompactList}\small\item\em HWND Attack\+SButton -\/ кнопка передачи хода (Прим. если кнопку нажимает второй игрок начинается расчет результатов заданых игроками комбинаций) \end{DoxyCompactList}\item 
+HWND \mbox{\hyperlink{class_game_window_a47cd3a4416b245360ec697f14c39ee78}{Red\+SButton}}
+\begin{DoxyCompactList}\small\item\em HWND Red\+SButton -\/ кнопка красного камня (Выбирает красный камень для установки) \end{DoxyCompactList}\item 
+HWND \mbox{\hyperlink{class_game_window_a5f2d2d4e077a19d53758852520ae90aa}{Blue\+SButton}}
+\begin{DoxyCompactList}\small\item\em HWND Blue\+SButton -\/ кнопка синего камня (Выбирает синий камень для установки) \end{DoxyCompactList}\item 
+HWND \mbox{\hyperlink{class_game_window_af5f4a45644160b2517cc9b7a34570965}{Gray\+SButton}}
+\begin{DoxyCompactList}\small\item\em HWND Gray\+SButton -\/ кнопка серого камня (Выбирает серый камень для установки) \end{DoxyCompactList}\item 
+HWND \mbox{\hyperlink{class_game_window_ad1f0dc0a4bf4af91c51218890eb102ed}{Green\+SButton}}
+\begin{DoxyCompactList}\small\item\em HWND Green\+SButton -\/ кнопка зеленого камня (Выбирает зеленый камень для установки) \end{DoxyCompactList}\item 
+HWND \mbox{\hyperlink{class_game_window_af4a466aad1a7a2632bed7ec174c2bf9f}{HP1\+Bar}}
+\begin{DoxyCompactList}\small\item\em HWND HP1\+Bar -\/ 1 Прогресс Бар (Прим. отображает HP 2 игрока) \end{DoxyCompactList}\item 
+HWND \mbox{\hyperlink{class_game_window_a2454ebacfb7f0caa7a87a69ae0160e6c}{HP2\+Bar}}
+\begin{DoxyCompactList}\small\item\em HWND HP2\+Bar -\/ 2 Прогресс Бар (Прим. отображает HP 1 игрока) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс Окна Игры. 
+
+Создает объект окна игры.~\newline
+Использует win\+API.~\newline
+
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_game_window_a81f2f6fea59b4723569c591756328163}\label{class_game_window_a81f2f6fea59b4723569c591756328163}} 
+\index{GameWindow@{GameWindow}!GameWindow@{GameWindow}}
+\index{GameWindow@{GameWindow}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{GameWindow()}{GameWindow()}}
+{\footnotesize\ttfamily Game\+Window\+::\+Game\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Конструктор 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_game_window_a81f2f6fea59b4723569c591756328163}{GameWindow::GameWindow}}()\{}
+\DoxyCodeLine{     \mbox{\hyperlink{class_game_window_a99cf2400dc42baa60509aa468bc3ae49}{GameWindow::RegisterGWindowClass}}(\&\mbox{\hyperlink{class_game_window_a9d319c12847d6413f968e750956b602c}{gbcl}},(\textcolor{keywordtype}{char}*)\mbox{\hyperlink{_graph___constants___v__1__0_8h_a65d31bf7b35e1d78b8282eab403d1a34}{GBUTTON\_CLASS}},NULL,NULL);}
+\DoxyCodeLine{     \mbox{\hyperlink{class_game_window_a99cf2400dc42baa60509aa468bc3ae49}{GameWindow::RegisterGWindowClass}}(\&\mbox{\hyperlink{class_game_window_aea399cb25c01948e71436b5db6a863e9}{sdcl}},(\textcolor{keywordtype}{char}*)\mbox{\hyperlink{_graph___constants___v__1__0_8h_a96facb3ab5978332fe0fef87f74f9284}{SGDISPLAY\_CLASS}},DefWindowProcA,(\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}SGBACKGROUND"{}});}
+\DoxyCodeLine{     \mbox{\hyperlink{class_game_window_a99cf2400dc42baa60509aa468bc3ae49}{GameWindow::RegisterGWindowClass}}(\&\mbox{\hyperlink{class_game_window_af7ba9dc0d43a4d840faadf1288990f25}{dcl}},(\textcolor{keywordtype}{char}*)\mbox{\hyperlink{_graph___constants___v__1__0_8h_af6ed7e5a39f72b0bf0792b62659bfdad}{GDISPLAY\_CLASS}},\mbox{\hyperlink{_display_wnd_proc_8cpp_aa5d3bfea4d5b9625b8df968c8047238c}{DisplayWndProc}},(\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}GBACKGROUND"{}});}
+\DoxyCodeLine{     \mbox{\hyperlink{class_game_window_a99cf2400dc42baa60509aa468bc3ae49}{GameWindow::RegisterGWindowClass}}(\&\mbox{\hyperlink{class_game_window_a8bb8c69e0614ff49298f89ddebbdb73d}{wcl}},(\textcolor{keywordtype}{char}*)\mbox{\hyperlink{_graph___constants___v__1__0_8h_af4cf20aa56c8225a852a5051102d4479}{MAIN\_GWINDOW\_CLASS}},\mbox{\hyperlink{_game___proc_8cpp_a866c08120de10f14d472802f5b76db4b}{GameWndProc}},(\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}GFRAME"{}});}
+\DoxyCodeLine{}
+\DoxyCodeLine{     \mbox{\hyperlink{class_game_window_ae0a4c7d33196c7836b236a11bcae788f}{MainWindow}} = CreateWindowA(\mbox{\hyperlink{class_game_window_a8bb8c69e0614ff49298f89ddebbdb73d}{wcl}}.lpszClassName,}
+\DoxyCodeLine{                                \textcolor{stringliteral}{"{}Game"{}},}
+\DoxyCodeLine{                                 \mbox{\hyperlink{_graph___constants___v__1__0_8h_a65751275c703d33ae8bb1e6c70253e8b}{MAIN\_WINDOW\_STYLE}},}
+\DoxyCodeLine{                                 200,}
+\DoxyCodeLine{                                 200,}
+\DoxyCodeLine{                                 6*\mbox{\hyperlink{_graph___constants___v__1__0_8h_a13d3eb59580dd9db1e9418c6cdb5f4be}{CELLSIZE}}+GetSystemMetrics(SM\_CXFRAME),}
+\DoxyCodeLine{                                 6*\mbox{\hyperlink{_graph___constants___v__1__0_8h_a13d3eb59580dd9db1e9418c6cdb5f4be}{CELLSIZE}}+GetSystemMetrics(SM\_CYFRAME)+GetSystemMetrics(SM\_CYCAPTION),}
+\DoxyCodeLine{                                 NULL,}
+\DoxyCodeLine{                                 NULL,}
+\DoxyCodeLine{                                 GetModuleHandleA(NULL),}
+\DoxyCodeLine{                                 NULL);}
+\DoxyCodeLine{}
+\DoxyCodeLine{     \mbox{\hyperlink{class_game_window_a4cf5e62cc439926af88ff322d63981b6}{GameWindow::Create\_GButton}}(\&\mbox{\hyperlink{class_game_window_ae283fb077a46ff2d0defd6b4c0997a4f}{DeleteSButton}},}
+\DoxyCodeLine{                                \&\mbox{\hyperlink{class_game_window_ae0a4c7d33196c7836b236a11bcae788f}{MainWindow}},}
+\DoxyCodeLine{                                (HMENU)\mbox{\hyperlink{_graph___constants___v__1__0_8h_a6406a2b2402aebb6a163607125c17d6f}{DELETE\_BUTTON}},}
+\DoxyCodeLine{                                5*\mbox{\hyperlink{_graph___constants___v__1__0_8h_a13d3eb59580dd9db1e9418c6cdb5f4be}{CELLSIZE}},}
+\DoxyCodeLine{                                5*\mbox{\hyperlink{_graph___constants___v__1__0_8h_a13d3eb59580dd9db1e9418c6cdb5f4be}{CELLSIZE}});}
+\DoxyCodeLine{     \mbox{\hyperlink{class_game_window_a4cf5e62cc439926af88ff322d63981b6}{GameWindow::Create\_GButton}}(\&\mbox{\hyperlink{class_game_window_ad17c52057e92850a9c30bb1b6d65eb4a}{AttackSButton}},}
+\DoxyCodeLine{                                \&\mbox{\hyperlink{class_game_window_ae0a4c7d33196c7836b236a11bcae788f}{MainWindow}},}
+\DoxyCodeLine{                                (HMENU)\mbox{\hyperlink{_graph___constants___v__1__0_8h_a786d70d7ce49bb12cbb19f64a3eed58e}{ATTACK\_BUTTON}},}
+\DoxyCodeLine{                                5*\mbox{\hyperlink{_graph___constants___v__1__0_8h_a13d3eb59580dd9db1e9418c6cdb5f4be}{CELLSIZE}}+\mbox{\hyperlink{_graph___constants___v__1__0_8h_a7e46ec15af9fca31d7eb1f967d9f2c76}{STONEBUTTONSIZE}},}
+\DoxyCodeLine{                                5*\mbox{\hyperlink{_graph___constants___v__1__0_8h_a13d3eb59580dd9db1e9418c6cdb5f4be}{CELLSIZE}}+\mbox{\hyperlink{_graph___constants___v__1__0_8h_a7e46ec15af9fca31d7eb1f967d9f2c76}{STONEBUTTONSIZE}});}
+\DoxyCodeLine{     \mbox{\hyperlink{class_game_window_a4cf5e62cc439926af88ff322d63981b6}{GameWindow::Create\_GButton}}(\&\mbox{\hyperlink{class_game_window_a47cd3a4416b245360ec697f14c39ee78}{RedSButton}},}
+\DoxyCodeLine{                                \&\mbox{\hyperlink{class_game_window_ae0a4c7d33196c7836b236a11bcae788f}{MainWindow}},}
+\DoxyCodeLine{                                (HMENU)\mbox{\hyperlink{_graph___constants___v__1__0_8h_aec60c2412da98350a3f79f1cd9ba11e6}{RED\_S\_BUTTON}},}
+\DoxyCodeLine{                                5*\mbox{\hyperlink{_graph___constants___v__1__0_8h_a13d3eb59580dd9db1e9418c6cdb5f4be}{CELLSIZE}}+\mbox{\hyperlink{_graph___constants___v__1__0_8h_a7e46ec15af9fca31d7eb1f967d9f2c76}{STONEBUTTONSIZE}},}
+\DoxyCodeLine{                                5*\mbox{\hyperlink{_graph___constants___v__1__0_8h_a13d3eb59580dd9db1e9418c6cdb5f4be}{CELLSIZE}});}
+\DoxyCodeLine{     \mbox{\hyperlink{class_game_window_a4cf5e62cc439926af88ff322d63981b6}{GameWindow::Create\_GButton}}(\&\mbox{\hyperlink{class_game_window_af5f4a45644160b2517cc9b7a34570965}{GraySButton}},}
+\DoxyCodeLine{                                \&\mbox{\hyperlink{class_game_window_ae0a4c7d33196c7836b236a11bcae788f}{MainWindow}},}
+\DoxyCodeLine{                                (HMENU)\mbox{\hyperlink{_graph___constants___v__1__0_8h_a08dcbafcdd5594591f0ed1d584ebc3df}{GRAY\_S\_BUTTON}},}
+\DoxyCodeLine{                                5*\mbox{\hyperlink{_graph___constants___v__1__0_8h_a13d3eb59580dd9db1e9418c6cdb5f4be}{CELLSIZE}}+2*\mbox{\hyperlink{_graph___constants___v__1__0_8h_a7e46ec15af9fca31d7eb1f967d9f2c76}{STONEBUTTONSIZE}},}
+\DoxyCodeLine{                                5*\mbox{\hyperlink{_graph___constants___v__1__0_8h_a13d3eb59580dd9db1e9418c6cdb5f4be}{CELLSIZE}});}
+\DoxyCodeLine{     \mbox{\hyperlink{class_game_window_a4cf5e62cc439926af88ff322d63981b6}{GameWindow::Create\_GButton}}(\&\mbox{\hyperlink{class_game_window_ad1f0dc0a4bf4af91c51218890eb102ed}{GreenSButton}},}
+\DoxyCodeLine{                                \&\mbox{\hyperlink{class_game_window_ae0a4c7d33196c7836b236a11bcae788f}{MainWindow}},}
+\DoxyCodeLine{                                (HMENU)\mbox{\hyperlink{_graph___constants___v__1__0_8h_a1434187576697750fcde46e52924a80c}{GREEN\_S\_BUTTON}},}
+\DoxyCodeLine{                                5*\mbox{\hyperlink{_graph___constants___v__1__0_8h_a13d3eb59580dd9db1e9418c6cdb5f4be}{CELLSIZE}},}
+\DoxyCodeLine{                                5*\mbox{\hyperlink{_graph___constants___v__1__0_8h_a13d3eb59580dd9db1e9418c6cdb5f4be}{CELLSIZE}}+\mbox{\hyperlink{_graph___constants___v__1__0_8h_a7e46ec15af9fca31d7eb1f967d9f2c76}{STONEBUTTONSIZE}});}
+\DoxyCodeLine{     \mbox{\hyperlink{class_game_window_a4cf5e62cc439926af88ff322d63981b6}{GameWindow::Create\_GButton}}(\&\mbox{\hyperlink{class_game_window_a5f2d2d4e077a19d53758852520ae90aa}{BlueSButton}},}
+\DoxyCodeLine{                                \&\mbox{\hyperlink{class_game_window_ae0a4c7d33196c7836b236a11bcae788f}{MainWindow}},}
+\DoxyCodeLine{                                (HMENU)\mbox{\hyperlink{_graph___constants___v__1__0_8h_a850d44baa3297506af5f473c87eb33f2}{BLUE\_S\_BUTTON}},}
+\DoxyCodeLine{                                5*\mbox{\hyperlink{_graph___constants___v__1__0_8h_a13d3eb59580dd9db1e9418c6cdb5f4be}{CELLSIZE}},}
+\DoxyCodeLine{                                5*\mbox{\hyperlink{_graph___constants___v__1__0_8h_a13d3eb59580dd9db1e9418c6cdb5f4be}{CELLSIZE}}+2*\mbox{\hyperlink{_graph___constants___v__1__0_8h_a7e46ec15af9fca31d7eb1f967d9f2c76}{STONEBUTTONSIZE}});}
+\DoxyCodeLine{     \mbox{\hyperlink{class_game_window_a7249c96604b36f3883d81b471b19bb3b}{GameWindow::Set\_GButton\_Image}}(\&\mbox{\hyperlink{class_game_window_ae283fb077a46ff2d0defd6b4c0997a4f}{DeleteSButton}},\textcolor{stringliteral}{"{}DELETEBUTTON"{}});}
+\DoxyCodeLine{     \mbox{\hyperlink{class_game_window_a7249c96604b36f3883d81b471b19bb3b}{GameWindow::Set\_GButton\_Image}}(\&\mbox{\hyperlink{class_game_window_ad17c52057e92850a9c30bb1b6d65eb4a}{AttackSButton}},\textcolor{stringliteral}{"{}ATTACKBUTTON"{}});}
+\DoxyCodeLine{     \mbox{\hyperlink{class_game_window_a7249c96604b36f3883d81b471b19bb3b}{GameWindow::Set\_GButton\_Image}}(\&\mbox{\hyperlink{class_game_window_a47cd3a4416b245360ec697f14c39ee78}{RedSButton}},\textcolor{stringliteral}{"{}REDSTONEBUTTON"{}});}
+\DoxyCodeLine{     \mbox{\hyperlink{class_game_window_a7249c96604b36f3883d81b471b19bb3b}{GameWindow::Set\_GButton\_Image}}(\&\mbox{\hyperlink{class_game_window_a5f2d2d4e077a19d53758852520ae90aa}{BlueSButton}},\textcolor{stringliteral}{"{}BLUESTONEBUTTON"{}});}
+\DoxyCodeLine{     \mbox{\hyperlink{class_game_window_a7249c96604b36f3883d81b471b19bb3b}{GameWindow::Set\_GButton\_Image}}(\&\mbox{\hyperlink{class_game_window_af5f4a45644160b2517cc9b7a34570965}{GraySButton}},\textcolor{stringliteral}{"{}GRAYSTONEBUTTON"{}});}
+\DoxyCodeLine{     \mbox{\hyperlink{class_game_window_a7249c96604b36f3883d81b471b19bb3b}{GameWindow::Set\_GButton\_Image}}(\&\mbox{\hyperlink{class_game_window_ad1f0dc0a4bf4af91c51218890eb102ed}{GreenSButton}},\textcolor{stringliteral}{"{}GREENSTONEBUTTON"{}});}
+\DoxyCodeLine{}
+\DoxyCodeLine{     \mbox{\hyperlink{class_game_window_af2f4cf2cf75eb7efedb0bcc4d4514239}{GameWindow::Create\_GProgress\_Bar}}(\&\mbox{\hyperlink{class_game_window_af4a466aad1a7a2632bed7ec174c2bf9f}{HP1Bar}},}
+\DoxyCodeLine{                                      \&\mbox{\hyperlink{class_game_window_ae0a4c7d33196c7836b236a11bcae788f}{MainWindow}},}
+\DoxyCodeLine{                                      (HMENU)\mbox{\hyperlink{_graph___constants___v__1__0_8h_a4b9603c186cfef33b647fbe46e462d92}{HP1\_BAR}},}
+\DoxyCodeLine{                                      5*\mbox{\hyperlink{_graph___constants___v__1__0_8h_a13d3eb59580dd9db1e9418c6cdb5f4be}{CELLSIZE}}+3*\mbox{\hyperlink{_graph___constants___v__1__0_8h_a7e46ec15af9fca31d7eb1f967d9f2c76}{STONEBUTTONSIZE}},}
+\DoxyCodeLine{                                      5*\mbox{\hyperlink{_graph___constants___v__1__0_8h_a13d3eb59580dd9db1e9418c6cdb5f4be}{CELLSIZE}}+\mbox{\hyperlink{_graph___constants___v__1__0_8h_a7e46ec15af9fca31d7eb1f967d9f2c76}{STONEBUTTONSIZE}},}
+\DoxyCodeLine{                                      \mbox{\hyperlink{_graph___constants___v__1__0_8h_a7e46ec15af9fca31d7eb1f967d9f2c76}{STONEBUTTONSIZE}},}
+\DoxyCodeLine{                                      2*\mbox{\hyperlink{_graph___constants___v__1__0_8h_a7e46ec15af9fca31d7eb1f967d9f2c76}{STONEBUTTONSIZE}});}
+\DoxyCodeLine{     SendMessageA(\mbox{\hyperlink{class_game_window_af4a466aad1a7a2632bed7ec174c2bf9f}{HP1Bar}},PBM\_SETRANGE,NULL,MAKELONG(0,32));}
+\DoxyCodeLine{     SendMessageA(\mbox{\hyperlink{class_game_window_af4a466aad1a7a2632bed7ec174c2bf9f}{HP1Bar}},PBM\_SETSTEP,1,NULL);}
+\DoxyCodeLine{     SendMessageA(\mbox{\hyperlink{class_game_window_af4a466aad1a7a2632bed7ec174c2bf9f}{HP1Bar}},PBM\_SETPOS,32,NULL);}
+\DoxyCodeLine{     \mbox{\hyperlink{class_game_window_af2f4cf2cf75eb7efedb0bcc4d4514239}{GameWindow::Create\_GProgress\_Bar}}(\&\mbox{\hyperlink{class_game_window_a2454ebacfb7f0caa7a87a69ae0160e6c}{HP2Bar}},}
+\DoxyCodeLine{                                      \&\mbox{\hyperlink{class_game_window_ae0a4c7d33196c7836b236a11bcae788f}{MainWindow}},}
+\DoxyCodeLine{                                      (HMENU)\mbox{\hyperlink{_graph___constants___v__1__0_8h_a72021acc3cc40f86ad142a41a5933c3c}{HP2\_BAR}},}
+\DoxyCodeLine{                                      5*\mbox{\hyperlink{_graph___constants___v__1__0_8h_a13d3eb59580dd9db1e9418c6cdb5f4be}{CELLSIZE}}+\mbox{\hyperlink{_graph___constants___v__1__0_8h_a7e46ec15af9fca31d7eb1f967d9f2c76}{STONEBUTTONSIZE}},}
+\DoxyCodeLine{                                      5*\mbox{\hyperlink{_graph___constants___v__1__0_8h_a13d3eb59580dd9db1e9418c6cdb5f4be}{CELLSIZE}}+3*\mbox{\hyperlink{_graph___constants___v__1__0_8h_a7e46ec15af9fca31d7eb1f967d9f2c76}{STONEBUTTONSIZE}},}
+\DoxyCodeLine{                                      2*\mbox{\hyperlink{_graph___constants___v__1__0_8h_a7e46ec15af9fca31d7eb1f967d9f2c76}{STONEBUTTONSIZE}},}
+\DoxyCodeLine{                                      \mbox{\hyperlink{_graph___constants___v__1__0_8h_a7e46ec15af9fca31d7eb1f967d9f2c76}{STONEBUTTONSIZE}});}
+\DoxyCodeLine{     SendMessageA(\mbox{\hyperlink{class_game_window_a2454ebacfb7f0caa7a87a69ae0160e6c}{HP2Bar}},PBM\_SETRANGE,NULL,MAKELONG(0,32));}
+\DoxyCodeLine{     SendMessageA(\mbox{\hyperlink{class_game_window_a2454ebacfb7f0caa7a87a69ae0160e6c}{HP2Bar}},PBM\_SETSTEP,1,NULL);}
+\DoxyCodeLine{     SendMessageA(\mbox{\hyperlink{class_game_window_a2454ebacfb7f0caa7a87a69ae0160e6c}{HP2Bar}},PBM\_SETPOS,32,NULL);}
+\DoxyCodeLine{     \mbox{\hyperlink{class_game_window_a58a651cce1ad0eb1d0a10ad21a985286}{GameWindow::Create\_Small\_Display}}(\&\mbox{\hyperlink{class_game_window_aee42510d6e94adb07dae1c66c5983438}{AGDisplay}},}
+\DoxyCodeLine{                                      \&\mbox{\hyperlink{class_game_window_ae0a4c7d33196c7836b236a11bcae788f}{MainWindow}},}
+\DoxyCodeLine{                                      (HMENU)\mbox{\hyperlink{_graph___constants___v__1__0_8h_a0da130385fa6e5a89ecda1827739eac3}{ATTACK\_DISPLAY}},}
+\DoxyCodeLine{                                      5*\mbox{\hyperlink{_graph___constants___v__1__0_8h_a13d3eb59580dd9db1e9418c6cdb5f4be}{CELLSIZE}}+2*\mbox{\hyperlink{_graph___constants___v__1__0_8h_a7e46ec15af9fca31d7eb1f967d9f2c76}{STONEBUTTONSIZE}},}
+\DoxyCodeLine{                                      5*\mbox{\hyperlink{_graph___constants___v__1__0_8h_a13d3eb59580dd9db1e9418c6cdb5f4be}{CELLSIZE}}+2*\mbox{\hyperlink{_graph___constants___v__1__0_8h_a7e46ec15af9fca31d7eb1f967d9f2c76}{STONEBUTTONSIZE}});}
+\DoxyCodeLine{     \mbox{\hyperlink{class_game_window_a58a651cce1ad0eb1d0a10ad21a985286}{GameWindow::Create\_Small\_Display}}(\&\mbox{\hyperlink{class_game_window_a9de4bed2b27bafdffcc37f3d3e6a6c92}{DGDisplay}},}
+\DoxyCodeLine{                                      \&\mbox{\hyperlink{class_game_window_ae0a4c7d33196c7836b236a11bcae788f}{MainWindow}},}
+\DoxyCodeLine{                                      (HMENU)\mbox{\hyperlink{_graph___constants___v__1__0_8h_a496eba465d4a856e6800e10bc31bc362}{DEFENSE\_DISPLAY}},}
+\DoxyCodeLine{                                      5*\mbox{\hyperlink{_graph___constants___v__1__0_8h_a13d3eb59580dd9db1e9418c6cdb5f4be}{CELLSIZE}}+\mbox{\hyperlink{_graph___constants___v__1__0_8h_a7e46ec15af9fca31d7eb1f967d9f2c76}{STONEBUTTONSIZE}},}
+\DoxyCodeLine{                                      5*\mbox{\hyperlink{_graph___constants___v__1__0_8h_a13d3eb59580dd9db1e9418c6cdb5f4be}{CELLSIZE}}+2*\mbox{\hyperlink{_graph___constants___v__1__0_8h_a7e46ec15af9fca31d7eb1f967d9f2c76}{STONEBUTTONSIZE}});}
+\DoxyCodeLine{     \mbox{\hyperlink{class_game_window_a58a651cce1ad0eb1d0a10ad21a985286}{GameWindow::Create\_Small\_Display}}(\&\mbox{\hyperlink{class_game_window_a7f61d064ed0a0087b3778b305e5f9817}{SGDisplay}},}
+\DoxyCodeLine{                                      \&\mbox{\hyperlink{class_game_window_ae0a4c7d33196c7836b236a11bcae788f}{MainWindow}},}
+\DoxyCodeLine{                                      (HMENU)\mbox{\hyperlink{_graph___constants___v__1__0_8h_a7278dfa25d077bf56a11c075fdcdf645}{SUPPORT\_DISPLAY}},}
+\DoxyCodeLine{                                      5*\mbox{\hyperlink{_graph___constants___v__1__0_8h_a13d3eb59580dd9db1e9418c6cdb5f4be}{CELLSIZE}}+2*\mbox{\hyperlink{_graph___constants___v__1__0_8h_a7e46ec15af9fca31d7eb1f967d9f2c76}{STONEBUTTONSIZE}},}
+\DoxyCodeLine{                                      5*\mbox{\hyperlink{_graph___constants___v__1__0_8h_a13d3eb59580dd9db1e9418c6cdb5f4be}{CELLSIZE}}+\mbox{\hyperlink{_graph___constants___v__1__0_8h_a7e46ec15af9fca31d7eb1f967d9f2c76}{STONEBUTTONSIZE}});}
+\DoxyCodeLine{}
+\DoxyCodeLine{     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 1;i < 5;i++)\{}
+\DoxyCodeLine{         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 1;j < 5;j++)\{}
+\DoxyCodeLine{             \mbox{\hyperlink{class_game_window_a761c6f7a4865c596d58d1aaf6a54b883}{GameWindow::Create\_Cell\_Display}}(\&\mbox{\hyperlink{class_game_window_a77da13e65e60de4853b1525839a9f637}{Cell\_Display\_Array}}[(i-\/1)*4+(j-\/1)],}
+\DoxyCodeLine{                                             \&\mbox{\hyperlink{class_game_window_ae0a4c7d33196c7836b236a11bcae788f}{MainWindow}},}
+\DoxyCodeLine{                                             (HMENU)((15-\/((i-\/1)*4+(j-\/1)))+\mbox{\hyperlink{_graph___constants___v__1__0_8h_ad70152e66b02ea0124a1a14977bc9868}{GOFFSET}}),}
+\DoxyCodeLine{                                             j,}
+\DoxyCodeLine{                                             i);}
+\DoxyCodeLine{         \}}
+\DoxyCodeLine{     \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_game_window_a761c6f7a4865c596d58d1aaf6a54b883}\label{class_game_window_a761c6f7a4865c596d58d1aaf6a54b883}} 
+\index{GameWindow@{GameWindow}!Create\_Cell\_Display@{Create\_Cell\_Display}}
+\index{Create\_Cell\_Display@{Create\_Cell\_Display}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{Create\_Cell\_Display()}{Create\_Cell\_Display()}}
+{\footnotesize\ttfamily void Game\+Window\+::\+Create\+\_\+\+Cell\+\_\+\+Display (\begin{DoxyParamCaption}\item[{HWND $\ast$}]{Cell\+\_\+\+Display,  }\item[{HWND $\ast$}]{p\+Wnd,  }\item[{HMENU}]{id,  }\item[{int}]{xpos,  }\item[{int}]{ypos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create\+\_\+\+Cell\+\_\+\+Display -\/ Создает Дисплей Клетки 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em Cell\+\_\+\+Display} & -\/ Указатель на Дисплей \\
+\hline
+{\em p\+Wnd} & -\/ Указатель на Родительское Окно \\
+\hline
+{\em id} & -\/ Идентефикатор \\
+\hline
+{\em xpos} & -\/ x \\
+\hline
+{\em ypos} & -\/ y 
+\begin{DoxyCode}{1}
+\DoxyCodeLine{\textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_window_a761c6f7a4865c596d58d1aaf6a54b883}{GameWindow::Create\_Cell\_Display}}(HWND *Cell\_Display,HWND *pWnd,HMENU \textcolor{keywordtype}{id},\textcolor{keywordtype}{int} xpos, \textcolor{keywordtype}{int} ypos)\{}
+\DoxyCodeLine{    *Cell\_Display = CreateWindowA(\mbox{\hyperlink{_graph___constants___v__1__0_8h_af6ed7e5a39f72b0bf0792b62659bfdad}{GDISPLAY\_CLASS}},}
+\DoxyCodeLine{                                  \textcolor{stringliteral}{"{}"{}},}
+\DoxyCodeLine{                                  \mbox{\hyperlink{_graph___constants___v__1__0_8h_a861428c085dbfb98e0773edd9b6935c4}{GDISPLAY\_STYLE}},}
+\DoxyCodeLine{                                  xpos*\mbox{\hyperlink{_graph___constants___v__1__0_8h_a13d3eb59580dd9db1e9418c6cdb5f4be}{CELLSIZE}},}
+\DoxyCodeLine{                                  ypos*\mbox{\hyperlink{_graph___constants___v__1__0_8h_a13d3eb59580dd9db1e9418c6cdb5f4be}{CELLSIZE}},}
+\DoxyCodeLine{                                  \mbox{\hyperlink{_graph___constants___v__1__0_8h_a13d3eb59580dd9db1e9418c6cdb5f4be}{CELLSIZE}},}
+\DoxyCodeLine{                                  \mbox{\hyperlink{_graph___constants___v__1__0_8h_a13d3eb59580dd9db1e9418c6cdb5f4be}{CELLSIZE}},}
+\DoxyCodeLine{                                  *pWnd,}
+\DoxyCodeLine{                                  \textcolor{keywordtype}{id},}
+\DoxyCodeLine{                                  NULL,}
+\DoxyCodeLine{                                  NULL);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_window_acc023854fccab46ca87f02704d9d3093}\label{class_game_window_acc023854fccab46ca87f02704d9d3093}} 
+\index{GameWindow@{GameWindow}!Create\_GButton@{Create\_GButton}}
+\index{Create\_GButton@{Create\_GButton}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{Create\_GButton()}{Create\_GButton()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Game\+Window\+::\+Create\+\_\+\+GButton (\begin{DoxyParamCaption}\item[{HWND $\ast$}]{Button,  }\item[{HWND $\ast$}]{p\+Wnd,  }\item[{HMENU}]{id,  }\item[{int}]{xpos,  }\item[{int}]{ypos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create\+\_\+\+GButton -\/ Создает Кнопку 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em Button} & -\/ Указатель на Кнопку \\
+\hline
+{\em p\+Wnd} & -\/ Указатель на Родительское Окно \\
+\hline
+{\em id} & -\/ Идентефикатор \\
+\hline
+{\em xpos} & -\/ x \\
+\hline
+{\em ypos} & -\/ y 
+\begin{DoxyCode}{1}
+\DoxyCodeLine{\textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_window_a4cf5e62cc439926af88ff322d63981b6}{GameWindow::Create\_GButton}}(HWND *Button,HWND *pWnd,HMENU \textcolor{keywordtype}{id},\textcolor{keywordtype}{int} xpos, \textcolor{keywordtype}{int} ypos)\{}
+\DoxyCodeLine{    *Button = CreateWindowA(\mbox{\hyperlink{_graph___constants___v__1__0_8h_a65d31bf7b35e1d78b8282eab403d1a34}{GBUTTON\_CLASS}},}
+\DoxyCodeLine{                            \textcolor{stringliteral}{"{}"{}},}
+\DoxyCodeLine{                            \mbox{\hyperlink{_graph___constants___v__1__0_8h_aa4cf4fc4ca09011828e4304c361641e0}{GAME\_BUTTON\_STYLE}},}
+\DoxyCodeLine{                            xpos,}
+\DoxyCodeLine{                            ypos,}
+\DoxyCodeLine{                            \mbox{\hyperlink{_graph___constants___v__1__0_8h_a7e46ec15af9fca31d7eb1f967d9f2c76}{STONEBUTTONSIZE}},}
+\DoxyCodeLine{                            \mbox{\hyperlink{_graph___constants___v__1__0_8h_a7e46ec15af9fca31d7eb1f967d9f2c76}{STONEBUTTONSIZE}},}
+\DoxyCodeLine{                            *pWnd,}
+\DoxyCodeLine{                            \textcolor{keywordtype}{id},}
+\DoxyCodeLine{                            GetModuleHandleA(NULL),}
+\DoxyCodeLine{                            NULL);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_window_a4cf5e62cc439926af88ff322d63981b6}\label{class_game_window_a4cf5e62cc439926af88ff322d63981b6}} 
+\index{GameWindow@{GameWindow}!Create\_GButton@{Create\_GButton}}
+\index{Create\_GButton@{Create\_GButton}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{Create\_GButton()}{Create\_GButton()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Game\+Window\+::\+Create\+\_\+\+GButton (\begin{DoxyParamCaption}\item[{HWND $\ast$}]{Button,  }\item[{HWND $\ast$}]{p\+Wnd,  }\item[{HMENU}]{id,  }\item[{int}]{xpos,  }\item[{int}]{ypos,  }\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create\+\_\+\+GButton -\/ Создает Кнопку 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em Button} & -\/ Указатель на Кнопку \\
+\hline
+{\em p\+Wnd} & -\/ Указатель на Родительское Окно \\
+\hline
+{\em id} & -\/ Идентефикатор \\
+\hline
+{\em xpos} & -\/ x \\
+\hline
+{\em ypos} & -\/ y \\
+\hline
+{\em w} & -\/ Ширина \\
+\hline
+{\em h} & -\/ Высота 
+\begin{DoxyCode}{1}
+\DoxyCodeLine{\textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_window_a4cf5e62cc439926af88ff322d63981b6}{GameWindow::Create\_GButton}}(HWND *Button,HWND *pWnd,HMENU \textcolor{keywordtype}{id},\textcolor{keywordtype}{int} xpos, \textcolor{keywordtype}{int} ypos, \textcolor{keywordtype}{int} w, \textcolor{keywordtype}{int} h)\{}
+\DoxyCodeLine{    *Button = CreateWindowA(\mbox{\hyperlink{_graph___constants___v__1__0_8h_a65d31bf7b35e1d78b8282eab403d1a34}{GBUTTON\_CLASS}},}
+\DoxyCodeLine{                            \textcolor{stringliteral}{"{}"{}},}
+\DoxyCodeLine{                            \mbox{\hyperlink{_graph___constants___v__1__0_8h_aa4cf4fc4ca09011828e4304c361641e0}{GAME\_BUTTON\_STYLE}},}
+\DoxyCodeLine{                            xpos,}
+\DoxyCodeLine{                            ypos,}
+\DoxyCodeLine{                            w,}
+\DoxyCodeLine{                            h,}
+\DoxyCodeLine{                            *pWnd,}
+\DoxyCodeLine{                            \textcolor{keywordtype}{id},}
+\DoxyCodeLine{                            GetModuleHandleA(NULL),}
+\DoxyCodeLine{                            NULL);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_window_af2f4cf2cf75eb7efedb0bcc4d4514239}\label{class_game_window_af2f4cf2cf75eb7efedb0bcc4d4514239}} 
+\index{GameWindow@{GameWindow}!Create\_GProgress\_Bar@{Create\_GProgress\_Bar}}
+\index{Create\_GProgress\_Bar@{Create\_GProgress\_Bar}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{Create\_GProgress\_Bar()}{Create\_GProgress\_Bar()}}
+{\footnotesize\ttfamily void Game\+Window\+::\+Create\+\_\+\+GProgress\+\_\+\+Bar (\begin{DoxyParamCaption}\item[{HWND $\ast$}]{Progress\+Bar,  }\item[{HWND $\ast$}]{p\+Wnd,  }\item[{HMENU}]{id,  }\item[{int}]{xpos,  }\item[{int}]{ypos,  }\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create\+\_\+\+GProgress\+\_\+\+Bar -\/ Создает Прогресс Бар 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em Progress\+Bar} & -\/ Указатель на Прогресс Бар \\
+\hline
+{\em p\+Wnd} & -\/ Указатель на Родительское Окно \\
+\hline
+{\em id} & -\/ Идентефикатор \\
+\hline
+{\em xpos} & -\/ x \\
+\hline
+{\em ypos} & -\/ y \\
+\hline
+{\em w} & -\/ Ширина \\
+\hline
+{\em h} & -\/ Высота 
+\begin{DoxyCode}{1}
+\DoxyCodeLine{\textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_window_af2f4cf2cf75eb7efedb0bcc4d4514239}{GameWindow::Create\_GProgress\_Bar}}(HWND *ProgressBar,HWND *pWnd,HMENU \textcolor{keywordtype}{id},\textcolor{keywordtype}{int} xpos, \textcolor{keywordtype}{int} ypos,\textcolor{keywordtype}{int} w,\textcolor{keywordtype}{int} h)\{}
+\DoxyCodeLine{    \textcolor{keywordflow}{if}(w<h)\{}
+\DoxyCodeLine{        *ProgressBar = CreateWindowA(PROGRESS\_CLASSA,}
+\DoxyCodeLine{                                    \textcolor{stringliteral}{"{}"{}},}
+\DoxyCodeLine{                                    \mbox{\hyperlink{_graph___constants___v__1__0_8h_a964fca29475af09e4380427a6208f61b}{GPROGRESS\_BAR\_STYLE}}|PBS\_VERTICAL,}
+\DoxyCodeLine{                                    xpos,}
+\DoxyCodeLine{                                    ypos,}
+\DoxyCodeLine{                                    w,}
+\DoxyCodeLine{                                    h,}
+\DoxyCodeLine{                                    *pWnd,}
+\DoxyCodeLine{                                    \textcolor{keywordtype}{id},}
+\DoxyCodeLine{                                    GetModuleHandleA(NULL),}
+\DoxyCodeLine{                                    NULL);}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{        *ProgressBar = CreateWindowA(PROGRESS\_CLASSA,}
+\DoxyCodeLine{                                     \textcolor{stringliteral}{"{}"{}},}
+\DoxyCodeLine{                                     \mbox{\hyperlink{_graph___constants___v__1__0_8h_a964fca29475af09e4380427a6208f61b}{GPROGRESS\_BAR\_STYLE}},}
+\DoxyCodeLine{                                     xpos,}
+\DoxyCodeLine{                                     ypos,}
+\DoxyCodeLine{                                     w,}
+\DoxyCodeLine{                                     h,}
+\DoxyCodeLine{                                     *pWnd,}
+\DoxyCodeLine{                                     \textcolor{keywordtype}{id},}
+\DoxyCodeLine{                                     GetModuleHandleA(NULL),}
+\DoxyCodeLine{                                     NULL);}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_window_a58a651cce1ad0eb1d0a10ad21a985286}\label{class_game_window_a58a651cce1ad0eb1d0a10ad21a985286}} 
+\index{GameWindow@{GameWindow}!Create\_Small\_Display@{Create\_Small\_Display}}
+\index{Create\_Small\_Display@{Create\_Small\_Display}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{Create\_Small\_Display()}{Create\_Small\_Display()}}
+{\footnotesize\ttfamily void Game\+Window\+::\+Create\+\_\+\+Small\+\_\+\+Display (\begin{DoxyParamCaption}\item[{HWND $\ast$}]{Display,  }\item[{HWND $\ast$}]{p\+Wnd,  }\item[{HMENU}]{id,  }\item[{int}]{xpos,  }\item[{int}]{ypos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create\+\_\+\+Small\+\_\+\+Display -\/ Создает Маленький Дисплей 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em Display} & -\/ Указатель на Дисплей \\
+\hline
+{\em p\+Wnd} & -\/ Указатель на Родительское Окно \\
+\hline
+{\em id} & -\/ Идентефикатор \\
+\hline
+{\em xpos} & -\/ x \\
+\hline
+{\em ypos} & -\/ y 
+\begin{DoxyCode}{1}
+\DoxyCodeLine{\textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_window_a58a651cce1ad0eb1d0a10ad21a985286}{GameWindow::Create\_Small\_Display}}(HWND *Display,HWND *pWnd,HMENU \textcolor{keywordtype}{id},\textcolor{keywordtype}{int} xpos, \textcolor{keywordtype}{int} ypos)\{}
+\DoxyCodeLine{    *Display = CreateWindowA(\mbox{\hyperlink{_graph___constants___v__1__0_8h_a96facb3ab5978332fe0fef87f74f9284}{SGDISPLAY\_CLASS}},}
+\DoxyCodeLine{                             \textcolor{stringliteral}{"{}"{}},}
+\DoxyCodeLine{                             \mbox{\hyperlink{_graph___constants___v__1__0_8h_a861428c085dbfb98e0773edd9b6935c4}{GDISPLAY\_STYLE}},}
+\DoxyCodeLine{                             xpos,}
+\DoxyCodeLine{                             ypos,}
+\DoxyCodeLine{                             \mbox{\hyperlink{_graph___constants___v__1__0_8h_a7e46ec15af9fca31d7eb1f967d9f2c76}{STONEBUTTONSIZE}},}
+\DoxyCodeLine{                             \mbox{\hyperlink{_graph___constants___v__1__0_8h_a7e46ec15af9fca31d7eb1f967d9f2c76}{STONEBUTTONSIZE}},}
+\DoxyCodeLine{                             *pWnd,}
+\DoxyCodeLine{                             \textcolor{keywordtype}{id},}
+\DoxyCodeLine{                             NULL,}
+\DoxyCodeLine{                             NULL);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_window_ab49907929587c54159661dd751bae8dd}\label{class_game_window_ab49907929587c54159661dd751bae8dd}} 
+\index{GameWindow@{GameWindow}!GetCDisplay@{GetCDisplay}}
+\index{GetCDisplay@{GetCDisplay}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{GetCDisplay()}{GetCDisplay()}}
+{\footnotesize\ttfamily HWND $\ast$ Game\+Window\+::\+Get\+CDisplay (\begin{DoxyParamCaption}\item[{int}]{Number }\end{DoxyParamCaption})}
+
+
+
+Get\+CDisplay -\/ Возвращает Указатель на Дисплей Клетки 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em Number} & -\/ Номер Клетки \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+HWND$\ast$ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{HWND* \mbox{\hyperlink{class_game_window_ab49907929587c54159661dd751bae8dd}{GameWindow::GetCDisplay}}(\textcolor{keywordtype}{int} Number)\{}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} \&\mbox{\hyperlink{class_game_window_a77da13e65e60de4853b1525839a9f637}{Cell\_Display\_Array}}[Number];}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_window_acbab862e4e4489e280704dfc52ff0267}\label{class_game_window_acbab862e4e4489e280704dfc52ff0267}} 
+\index{GameWindow@{GameWindow}!GetGWindow@{GetGWindow}}
+\index{GetGWindow@{GetGWindow}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{GetGWindow()}{GetGWindow()}}
+{\footnotesize\ttfamily HWND $\ast$ Game\+Window\+::\+Get\+GWindow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get\+GWindow -\/ Возвращает Указатель на Главное Окно 
+
+\begin{DoxyReturn}{Возвращает}
+HWND$\ast$ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{HWND* \mbox{\hyperlink{class_game_window_acbab862e4e4489e280704dfc52ff0267}{GameWindow::GetGWindow}}()\{}
+\DoxyCodeLine{     \textcolor{keywordflow}{return} \&\mbox{\hyperlink{class_game_window_ae0a4c7d33196c7836b236a11bcae788f}{MainWindow}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_window_aac20446e1d7c089f9c655d16a31c118f}\label{class_game_window_aac20446e1d7c089f9c655d16a31c118f}} 
+\index{GameWindow@{GameWindow}!GetHPBar@{GetHPBar}}
+\index{GetHPBar@{GetHPBar}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{GetHPBar()}{GetHPBar()}}
+{\footnotesize\ttfamily HWND$\ast$ Game\+Window\+::\+Get\+HPBar (\begin{DoxyParamCaption}\item[{bool}]{Number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get\+HPBar. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em Number} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+HWND$\ast$ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{HWND* \mbox{\hyperlink{class_game_window_aac20446e1d7c089f9c655d16a31c118f}{GetHPBar}}(\textcolor{keywordtype}{bool} Number)\{}
+\DoxyCodeLine{ \textcolor{keywordflow}{if}(Number)\{}
+\DoxyCodeLine{     \textcolor{keywordflow}{return} \&\mbox{\hyperlink{class_game_window_af4a466aad1a7a2632bed7ec174c2bf9f}{HP1Bar}};}
+\DoxyCodeLine{ \}}
+\DoxyCodeLine{ \textcolor{keywordflow}{return} \&\mbox{\hyperlink{class_game_window_a2454ebacfb7f0caa7a87a69ae0160e6c}{HP2Bar}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_window_a99cf2400dc42baa60509aa468bc3ae49}\label{class_game_window_a99cf2400dc42baa60509aa468bc3ae49}} 
+\index{GameWindow@{GameWindow}!RegisterGWindowClass@{RegisterGWindowClass}}
+\index{RegisterGWindowClass@{RegisterGWindowClass}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{RegisterGWindowClass()}{RegisterGWindowClass()}}
+{\footnotesize\ttfamily void Game\+Window\+::\+Register\+GWindow\+Class (\begin{DoxyParamCaption}\item[{WNDCLASSA $\ast$}]{Window\+Class,  }\item[{LPSTR}]{GWindow\+Class\+Name,  }\item[{GWNDPROC}]{GWnd\+Proc,  }\item[{LPSTR}]{GBack\+Ground }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Register\+GWindow\+Class -\/ Регестрирует Класс Окна 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em Window\+Class} & -\/ Указатель на Структуру Типа WNDCLASSA \\
+\hline
+{\em GWindow\+Class\+Name} & -\/ Название Класса \\
+\hline
+{\em GWnd\+Proc} & -\/ Процесс Обработки Оконных Сообщений \\
+\hline
+{\em GBack\+Ground} & -\/ Фоновое Изображение 
+\begin{DoxyCode}{1}
+\DoxyCodeLine{\textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_window_a99cf2400dc42baa60509aa468bc3ae49}{GameWindow::RegisterGWindowClass}}(WNDCLASSA *WindowClass,LPSTR GWindowClassName,GWNDPROC GWndProc,LPSTR GBackGround)\{}
+\DoxyCodeLine{    \textcolor{keywordtype}{string} str1(\mbox{\hyperlink{_graph___constants___v__1__0_8h_a65d31bf7b35e1d78b8282eab403d1a34}{GBUTTON\_CLASS}});}
+\DoxyCodeLine{    \textcolor{keywordtype}{string} str2(GWindowClassName);}
+\DoxyCodeLine{    \textcolor{keywordtype}{bool} Flag = str2 != str1;}
+\DoxyCodeLine{    \textcolor{keywordflow}{if}(Flag)\{}
+\DoxyCodeLine{        memset(WindowClass,0,\textcolor{keyword}{sizeof} (WNDCLASSA));}
+\DoxyCodeLine{        WindowClass-\/>lpszClassName = GWindowClassName;}
+\DoxyCodeLine{        WindowClass-\/>lpfnWndProc = GWndProc;}
+\DoxyCodeLine{        WindowClass-\/>hbrBackground = CreatePatternBrush(LoadBitmapA(GetModuleHandleA(NULL),GBackGround));}
+\DoxyCodeLine{        WindowClass-\/>hIcon = LoadIconA(GetModuleHandleA(NULL),\textcolor{stringliteral}{"{}GICON"{}});}
+\DoxyCodeLine{        WindowClass-\/>hCursor = LoadCursorA(GetModuleHandleA(NULL),\textcolor{stringliteral}{"{}GCURSOR"{}});}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{        GetClassInfoA(NULL,\textcolor{stringliteral}{"{}BUTTON"{}},WindowClass);}
+\DoxyCodeLine{        WindowClass-\/>lpszClassName = GWindowClassName;}
+\DoxyCodeLine{        WindowClass-\/>hCursor = LoadCursorA(GetModuleHandleA(NULL),\textcolor{stringliteral}{"{}GCURSOR"{}});}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    RegisterClassA(WindowClass);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_window_a7249c96604b36f3883d81b471b19bb3b}\label{class_game_window_a7249c96604b36f3883d81b471b19bb3b}} 
+\index{GameWindow@{GameWindow}!Set\_GButton\_Image@{Set\_GButton\_Image}}
+\index{Set\_GButton\_Image@{Set\_GButton\_Image}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{Set\_GButton\_Image()}{Set\_GButton\_Image()}}
+{\footnotesize\ttfamily void Game\+Window\+::\+Set\+\_\+\+GButton\+\_\+\+Image (\begin{DoxyParamCaption}\item[{HWND $\ast$}]{Button,  }\item[{LPCSTR}]{Image\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Set\+\_\+\+GButton\+\_\+\+Image -\/ Устанавливает Изображение на Кнопку 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em Button} & -\/ Указатель на Кнопку \\
+\hline
+{\em Image\+Name} & -\/ Название Изображения 
+\begin{DoxyCode}{1}
+\DoxyCodeLine{\textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_window_a7249c96604b36f3883d81b471b19bb3b}{GameWindow::Set\_GButton\_Image}}(HWND *Button, LPCSTR ImageName)\{}
+\DoxyCodeLine{    SendMessageA(*Button,}
+\DoxyCodeLine{                 BM\_SETIMAGE,}
+\DoxyCodeLine{                 IMAGE\_BITMAP,}
+\DoxyCodeLine{                 (LPARAM)LoadBitmapA(GetModuleHandleA(NULL),ImageName));}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Данные класса}
+\mbox{\Hypertarget{class_game_window_aee42510d6e94adb07dae1c66c5983438}\label{class_game_window_aee42510d6e94adb07dae1c66c5983438}} 
+\index{GameWindow@{GameWindow}!AGDisplay@{AGDisplay}}
+\index{AGDisplay@{AGDisplay}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{AGDisplay}{AGDisplay}}
+{\footnotesize\ttfamily HWND Game\+Window\+::\+AGDisplay\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+HWND AGDisplay -\/ малый дисплей 1. 
+
+\mbox{\Hypertarget{class_game_window_ad17c52057e92850a9c30bb1b6d65eb4a}\label{class_game_window_ad17c52057e92850a9c30bb1b6d65eb4a}} 
+\index{GameWindow@{GameWindow}!AttackSButton@{AttackSButton}}
+\index{AttackSButton@{AttackSButton}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{AttackSButton}{AttackSButton}}
+{\footnotesize\ttfamily HWND Game\+Window\+::\+Attack\+SButton\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+HWND Attack\+SButton -\/ кнопка передачи хода (Прим. если кнопку нажимает второй игрок начинается расчет результатов заданых игроками комбинаций) 
+
+\mbox{\Hypertarget{class_game_window_a5f2d2d4e077a19d53758852520ae90aa}\label{class_game_window_a5f2d2d4e077a19d53758852520ae90aa}} 
+\index{GameWindow@{GameWindow}!BlueSButton@{BlueSButton}}
+\index{BlueSButton@{BlueSButton}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{BlueSButton}{BlueSButton}}
+{\footnotesize\ttfamily HWND Game\+Window\+::\+Blue\+SButton\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+HWND Blue\+SButton -\/ кнопка синего камня (Выбирает синий камень для установки) 
+
+\mbox{\Hypertarget{class_game_window_a77da13e65e60de4853b1525839a9f637}\label{class_game_window_a77da13e65e60de4853b1525839a9f637}} 
+\index{GameWindow@{GameWindow}!Cell\_Display\_Array@{Cell\_Display\_Array}}
+\index{Cell\_Display\_Array@{Cell\_Display\_Array}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{Cell\_Display\_Array}{Cell\_Display\_Array}}
+{\footnotesize\ttfamily HWND Game\+Window\+::\+Cell\+\_\+\+Display\+\_\+\+Array\mbox{[}16\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+$<$ 
+
+HWND Cell\+\_\+\+Display\+\_\+\+Array\mbox{[}16\mbox{]} -\/ массив дисплеев клеток \mbox{\Hypertarget{class_game_window_af7ba9dc0d43a4d840faadf1288990f25}\label{class_game_window_af7ba9dc0d43a4d840faadf1288990f25}} 
+\index{GameWindow@{GameWindow}!dcl@{dcl}}
+\index{dcl@{dcl}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{dcl}{dcl}}
+{\footnotesize\ttfamily WNDCLASSA Game\+Window\+::dcl\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+WNDCLASSA dcl -\/ класс дисплея клетки 
+
+\mbox{\Hypertarget{class_game_window_ae283fb077a46ff2d0defd6b4c0997a4f}\label{class_game_window_ae283fb077a46ff2d0defd6b4c0997a4f}} 
+\index{GameWindow@{GameWindow}!DeleteSButton@{DeleteSButton}}
+\index{DeleteSButton@{DeleteSButton}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{DeleteSButton}{DeleteSButton}}
+{\footnotesize\ttfamily HWND Game\+Window\+::\+Delete\+SButton\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+HWND Delete\+SButton -\/ кнопка удаления камней (Прим. удаляет все камни на половине текущего игрока) 
+
+\mbox{\Hypertarget{class_game_window_a9de4bed2b27bafdffcc37f3d3e6a6c92}\label{class_game_window_a9de4bed2b27bafdffcc37f3d3e6a6c92}} 
+\index{GameWindow@{GameWindow}!DGDisplay@{DGDisplay}}
+\index{DGDisplay@{DGDisplay}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{DGDisplay}{DGDisplay}}
+{\footnotesize\ttfamily HWND Game\+Window\+::\+DGDisplay\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+HWND DGDisplay -\/ малый дисплей 2. 
+
+\mbox{\Hypertarget{class_game_window_a9d319c12847d6413f968e750956b602c}\label{class_game_window_a9d319c12847d6413f968e750956b602c}} 
+\index{GameWindow@{GameWindow}!gbcl@{gbcl}}
+\index{gbcl@{gbcl}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{gbcl}{gbcl}}
+{\footnotesize\ttfamily WNDCLASSA Game\+Window\+::gbcl\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+WNDCLASSA gbcl -\/ класс кнопки(Прим. все элементы управления в win\+API так же являются окнами) 
+
+\mbox{\Hypertarget{class_game_window_af5f4a45644160b2517cc9b7a34570965}\label{class_game_window_af5f4a45644160b2517cc9b7a34570965}} 
+\index{GameWindow@{GameWindow}!GraySButton@{GraySButton}}
+\index{GraySButton@{GraySButton}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{GraySButton}{GraySButton}}
+{\footnotesize\ttfamily HWND Game\+Window\+::\+Gray\+SButton\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+HWND Gray\+SButton -\/ кнопка серого камня (Выбирает серый камень для установки) 
+
+\mbox{\Hypertarget{class_game_window_ad1f0dc0a4bf4af91c51218890eb102ed}\label{class_game_window_ad1f0dc0a4bf4af91c51218890eb102ed}} 
+\index{GameWindow@{GameWindow}!GreenSButton@{GreenSButton}}
+\index{GreenSButton@{GreenSButton}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{GreenSButton}{GreenSButton}}
+{\footnotesize\ttfamily HWND Game\+Window\+::\+Green\+SButton\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+HWND Green\+SButton -\/ кнопка зеленого камня (Выбирает зеленый камень для установки) 
+
+\mbox{\Hypertarget{class_game_window_af4a466aad1a7a2632bed7ec174c2bf9f}\label{class_game_window_af4a466aad1a7a2632bed7ec174c2bf9f}} 
+\index{GameWindow@{GameWindow}!HP1Bar@{HP1Bar}}
+\index{HP1Bar@{HP1Bar}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{HP1Bar}{HP1Bar}}
+{\footnotesize\ttfamily HWND Game\+Window\+::\+HP1\+Bar\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+HWND HP1\+Bar -\/ 1 Прогресс Бар (Прим. отображает HP 2 игрока) 
+
+\mbox{\Hypertarget{class_game_window_a2454ebacfb7f0caa7a87a69ae0160e6c}\label{class_game_window_a2454ebacfb7f0caa7a87a69ae0160e6c}} 
+\index{GameWindow@{GameWindow}!HP2Bar@{HP2Bar}}
+\index{HP2Bar@{HP2Bar}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{HP2Bar}{HP2Bar}}
+{\footnotesize\ttfamily HWND Game\+Window\+::\+HP2\+Bar\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+HWND HP2\+Bar -\/ 2 Прогресс Бар (Прим. отображает HP 1 игрока) 
+
+\mbox{\Hypertarget{class_game_window_ae0a4c7d33196c7836b236a11bcae788f}\label{class_game_window_ae0a4c7d33196c7836b236a11bcae788f}} 
+\index{GameWindow@{GameWindow}!MainWindow@{MainWindow}}
+\index{MainWindow@{MainWindow}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{MainWindow}{MainWindow}}
+{\footnotesize\ttfamily HWND Game\+Window\+::\+Main\+Window\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+HWND Main\+Window -\/ главное окно 
+
+\mbox{\Hypertarget{class_game_window_a47cd3a4416b245360ec697f14c39ee78}\label{class_game_window_a47cd3a4416b245360ec697f14c39ee78}} 
+\index{GameWindow@{GameWindow}!RedSButton@{RedSButton}}
+\index{RedSButton@{RedSButton}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{RedSButton}{RedSButton}}
+{\footnotesize\ttfamily HWND Game\+Window\+::\+Red\+SButton\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+HWND Red\+SButton -\/ кнопка красного камня (Выбирает красный камень для установки) 
+
+\mbox{\Hypertarget{class_game_window_aea399cb25c01948e71436b5db6a863e9}\label{class_game_window_aea399cb25c01948e71436b5db6a863e9}} 
+\index{GameWindow@{GameWindow}!sdcl@{sdcl}}
+\index{sdcl@{sdcl}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{sdcl}{sdcl}}
+{\footnotesize\ttfamily WNDCLASSA Game\+Window\+::sdcl\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+WNDCLASSA sdcl -\/ класс маленького дисплея 
+
+\mbox{\Hypertarget{class_game_window_a7f61d064ed0a0087b3778b305e5f9817}\label{class_game_window_a7f61d064ed0a0087b3778b305e5f9817}} 
+\index{GameWindow@{GameWindow}!SGDisplay@{SGDisplay}}
+\index{SGDisplay@{SGDisplay}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{SGDisplay}{SGDisplay}}
+{\footnotesize\ttfamily HWND Game\+Window\+::\+SGDisplay\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+HWND SGDisplay -\/ малый дисплей 3. 
+
+\mbox{\Hypertarget{class_game_window_a8bb8c69e0614ff49298f89ddebbdb73d}\label{class_game_window_a8bb8c69e0614ff49298f89ddebbdb73d}} 
+\index{GameWindow@{GameWindow}!wcl@{wcl}}
+\index{wcl@{wcl}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{wcl}{wcl}}
+{\footnotesize\ttfamily WNDCLASSA Game\+Window\+::wcl\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+WNDCLASSA wcl -\/ класс главного окна 
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+Game\+\_\+\+V\+\_\+1\+\_\+0/\+Graph/\mbox{\hyperlink{_game___graph___v__1__0_8hpp}{Game\+\_\+\+Graph\+\_\+\+V\+\_\+1\+\_\+0.\+hpp}}\item 
+\+\_\+\+Game\+\_\+\+V\+\_\+1\+\_\+0/\+Graph/\mbox{\hyperlink{_create___display_8cpp}{Create\+\_\+\+Display.\+cpp}}\item 
+\+\_\+\+Game\+\_\+\+V\+\_\+1\+\_\+0/\+Graph/\mbox{\hyperlink{_create___g_button_8cpp}{Create\+\_\+\+GButton.\+cpp}}\item 
+\+\_\+\+Game\+\_\+\+V\+\_\+1\+\_\+0/\+Graph/\mbox{\hyperlink{_create___g_progress___bar_8cpp}{Create\+\_\+\+GProgress\+\_\+\+Bar.\+cpp}}\item 
+\+\_\+\+Game\+\_\+\+V\+\_\+1\+\_\+0/\+Graph/\mbox{\hyperlink{_game___window_8cpp}{Game\+\_\+\+Window.\+cpp}}\item 
+\+\_\+\+Game\+\_\+\+V\+\_\+1\+\_\+0/\+Graph/\mbox{\hyperlink{_get_c_display_8cpp}{Get\+CDisplay.\+cpp}}\item 
+\+\_\+\+Game\+\_\+\+V\+\_\+1\+\_\+0/\+Graph/\mbox{\hyperlink{_get_g_window_8cpp}{Get\+GWindow.\+cpp}}\item 
+\+\_\+\+Game\+\_\+\+V\+\_\+1\+\_\+0/\+Graph/\mbox{\hyperlink{_register_g_window_class_8cpp}{Register\+GWindow\+Class.\+cpp}}\item 
+\+\_\+\+Game\+\_\+\+V\+\_\+1\+\_\+0/\+Graph/\mbox{\hyperlink{_set___g_button___image_8cpp}{Set\+\_\+\+GButton\+\_\+\+Image.\+cpp}}\end{DoxyCompactItemize}

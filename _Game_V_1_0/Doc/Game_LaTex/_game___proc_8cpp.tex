@@ -1,0 +1,125 @@
+\hypertarget{_game___proc_8cpp}{}\doxysection{Файл \+\_\+\+Game\+\_\+\+V\+\_\+1\+\_\+0/\+Graph/\+Game\+\_\+\+Proc.cpp}
+\label{_game___proc_8cpp}\index{\_Game\_V\_1\_0/Graph/Game\_Proc.cpp@{\_Game\_V\_1\_0/Graph/Game\_Proc.cpp}}
+{\ttfamily \#include \char`\"{}Game\+\_\+\+Lib\+\_\+\+V\+\_\+1\+\_\+0.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_game___proc_8cpp_a32a3d5cc2264f37bce14101eaf9dff8f}{Load\+\_\+\+SImage}} (HWND hwnd, \mbox{\hyperlink{class_stone}{Stone}} $\ast$stone)
+\item 
+WINBOOL CALLBACK \mbox{\hyperlink{_game___proc_8cpp_a8126d65145539ca99fcc85cc595c6c8b}{Enum\+GProc}} (HWND hwnd, LPARAM lparam)
+\item 
+\mbox{\hyperlink{_game___proc___v__1__0_8hpp_a2fa95c6ba8373e1ee0eb99103b3ca5b1}{LRESULT}} \mbox{\hyperlink{_game___proc_8cpp_a866c08120de10f14d472802f5b76db4b}{Game\+Wnd\+Proc}} (HWND h\+Wnd, UINT Msg, WPARAM w\+Param, LPARAM l\+Param)
+\begin{DoxyCompactList}\small\item\em Процесс Главного Окна \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Переменные}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_game___proc_8cpp_a881577cad5c3f7fe50167f518081500e}{GMap}} \mbox{[}16\mbox{]}
+\item 
+\mbox{\hyperlink{class_board}{Board}} \mbox{\hyperlink{_game___proc_8cpp_af4d1530dc612cddeab1cfe454d48d91a}{Game\+\_\+\+Board}} (\mbox{\hyperlink{_game___proc_8cpp_a881577cad5c3f7fe50167f518081500e}{GMap}})
+\item 
+\mbox{\hyperlink{class_stone}{Stone}} \mbox{\hyperlink{_game___proc_8cpp_a3ee0cae35f4a8e5f94d6e9bf6c632e31}{S}}
+\item 
+int \mbox{\hyperlink{_game___proc_8cpp_a6b1fc1f96d67582a69d64a522b9c4111}{HP1}} = 32
+\item 
+int \mbox{\hyperlink{_game___proc_8cpp_a9ca0381c4b82662fe1c4f45011e2619c}{HP2}} = 32
+\item 
+int \mbox{\hyperlink{_game___proc_8cpp_a617a47c70795bcff659815ad0efd2266}{counter}} = 1
+\item 
+bool \mbox{\hyperlink{_game___proc_8cpp_ae89b1de81ed10ba2037660c02f2c8912}{Win\+Flag1}} = false
+\item 
+bool \mbox{\hyperlink{_game___proc_8cpp_a53437a5dfbba71ad72e8bbc406227c61}{Win\+Flag2}} = false
+\item 
+\mbox{\hyperlink{class_game_window}{Game\+Window}} \mbox{\hyperlink{_game___proc_8cpp_a70648e1e005aae6da32a91f69ef6ba8b}{window}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{_game___proc_8cpp_a8126d65145539ca99fcc85cc595c6c8b}\label{_game___proc_8cpp_a8126d65145539ca99fcc85cc595c6c8b}} 
+\index{Game\_Proc.cpp@{Game\_Proc.cpp}!EnumGProc@{EnumGProc}}
+\index{EnumGProc@{EnumGProc}!Game\_Proc.cpp@{Game\_Proc.cpp}}
+\doxysubsubsection{\texorpdfstring{EnumGProc()}{EnumGProc()}}
+{\footnotesize\ttfamily WINBOOL CALLBACK Enum\+GProc (\begin{DoxyParamCaption}\item[{HWND}]{hwnd,  }\item[{LPARAM}]{lparam }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_game___proc_8cpp_a866c08120de10f14d472802f5b76db4b}\label{_game___proc_8cpp_a866c08120de10f14d472802f5b76db4b}} 
+\index{Game\_Proc.cpp@{Game\_Proc.cpp}!GameWndProc@{GameWndProc}}
+\index{GameWndProc@{GameWndProc}!Game\_Proc.cpp@{Game\_Proc.cpp}}
+\doxysubsubsection{\texorpdfstring{GameWndProc()}{GameWndProc()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_game___proc___v__1__0_8hpp_a2fa95c6ba8373e1ee0eb99103b3ca5b1}{LRESULT}} Game\+Wnd\+Proc (\begin{DoxyParamCaption}\item[{HWND}]{h\+Wnd,  }\item[{UINT}]{Msg,  }\item[{WPARAM}]{w\+Param,  }\item[{LPARAM}]{l\+Param }\end{DoxyParamCaption})}
+
+
+
+Процесс Главного Окна 
+
+\mbox{\Hypertarget{_game___proc_8cpp_a32a3d5cc2264f37bce14101eaf9dff8f}\label{_game___proc_8cpp_a32a3d5cc2264f37bce14101eaf9dff8f}} 
+\index{Game\_Proc.cpp@{Game\_Proc.cpp}!Load\_SImage@{Load\_SImage}}
+\index{Load\_SImage@{Load\_SImage}!Game\_Proc.cpp@{Game\_Proc.cpp}}
+\doxysubsubsection{\texorpdfstring{Load\_SImage()}{Load\_SImage()}}
+{\footnotesize\ttfamily void Load\+\_\+\+SImage (\begin{DoxyParamCaption}\item[{HWND}]{hwnd,  }\item[{\mbox{\hyperlink{class_stone}{Stone}} $\ast$}]{stone }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Переменные}
+\mbox{\Hypertarget{_game___proc_8cpp_a617a47c70795bcff659815ad0efd2266}\label{_game___proc_8cpp_a617a47c70795bcff659815ad0efd2266}} 
+\index{Game\_Proc.cpp@{Game\_Proc.cpp}!counter@{counter}}
+\index{counter@{counter}!Game\_Proc.cpp@{Game\_Proc.cpp}}
+\doxysubsubsection{\texorpdfstring{counter}{counter}}
+{\footnotesize\ttfamily int counter = 1}
+
+\mbox{\Hypertarget{_game___proc_8cpp_af4d1530dc612cddeab1cfe454d48d91a}\label{_game___proc_8cpp_af4d1530dc612cddeab1cfe454d48d91a}} 
+\index{Game\_Proc.cpp@{Game\_Proc.cpp}!Game\_Board@{Game\_Board}}
+\index{Game\_Board@{Game\_Board}!Game\_Proc.cpp@{Game\_Proc.cpp}}
+\doxysubsubsection{\texorpdfstring{Game\_Board}{Game\_Board}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_board}{Board}} Game\+\_\+\+Board(\mbox{\hyperlink{_game___proc_8cpp_a881577cad5c3f7fe50167f518081500e}{GMap}}) (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_game___proc_8cpp_a881577cad5c3f7fe50167f518081500e}{GMap}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_game___proc_8cpp_a881577cad5c3f7fe50167f518081500e}\label{_game___proc_8cpp_a881577cad5c3f7fe50167f518081500e}} 
+\index{Game\_Proc.cpp@{Game\_Proc.cpp}!GMap@{GMap}}
+\index{GMap@{GMap}!Game\_Proc.cpp@{Game\_Proc.cpp}}
+\doxysubsubsection{\texorpdfstring{GMap}{GMap}}
+{\footnotesize\ttfamily int GMap\mbox{[}16\mbox{]}}
+
+{\bfseries Инициализатор}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{ 4, 5, 6, 7,}
+\DoxyCodeLine{ -\/1, 0, 1, 2,}
+\DoxyCodeLine{ 13,14,15,-\/1,}
+\DoxyCodeLine{  8, 9,10,11\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_game___proc_8cpp_a6b1fc1f96d67582a69d64a522b9c4111}\label{_game___proc_8cpp_a6b1fc1f96d67582a69d64a522b9c4111}} 
+\index{Game\_Proc.cpp@{Game\_Proc.cpp}!HP1@{HP1}}
+\index{HP1@{HP1}!Game\_Proc.cpp@{Game\_Proc.cpp}}
+\doxysubsubsection{\texorpdfstring{HP1}{HP1}}
+{\footnotesize\ttfamily int HP1 = 32}
+
+\mbox{\Hypertarget{_game___proc_8cpp_a9ca0381c4b82662fe1c4f45011e2619c}\label{_game___proc_8cpp_a9ca0381c4b82662fe1c4f45011e2619c}} 
+\index{Game\_Proc.cpp@{Game\_Proc.cpp}!HP2@{HP2}}
+\index{HP2@{HP2}!Game\_Proc.cpp@{Game\_Proc.cpp}}
+\doxysubsubsection{\texorpdfstring{HP2}{HP2}}
+{\footnotesize\ttfamily int HP2 = 32}
+
+\mbox{\Hypertarget{_game___proc_8cpp_a3ee0cae35f4a8e5f94d6e9bf6c632e31}\label{_game___proc_8cpp_a3ee0cae35f4a8e5f94d6e9bf6c632e31}} 
+\index{Game\_Proc.cpp@{Game\_Proc.cpp}!S@{S}}
+\index{S@{S}!Game\_Proc.cpp@{Game\_Proc.cpp}}
+\doxysubsubsection{\texorpdfstring{S}{S}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_stone}{Stone}} S}
+
+\mbox{\Hypertarget{_game___proc_8cpp_a70648e1e005aae6da32a91f69ef6ba8b}\label{_game___proc_8cpp_a70648e1e005aae6da32a91f69ef6ba8b}} 
+\index{Game\_Proc.cpp@{Game\_Proc.cpp}!window@{window}}
+\index{window@{window}!Game\_Proc.cpp@{Game\_Proc.cpp}}
+\doxysubsubsection{\texorpdfstring{window}{window}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_window}{Game\+Window}} window\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{_game___proc_8cpp_ae89b1de81ed10ba2037660c02f2c8912}\label{_game___proc_8cpp_ae89b1de81ed10ba2037660c02f2c8912}} 
+\index{Game\_Proc.cpp@{Game\_Proc.cpp}!WinFlag1@{WinFlag1}}
+\index{WinFlag1@{WinFlag1}!Game\_Proc.cpp@{Game\_Proc.cpp}}
+\doxysubsubsection{\texorpdfstring{WinFlag1}{WinFlag1}}
+{\footnotesize\ttfamily bool Win\+Flag1 = false}
+
+\mbox{\Hypertarget{_game___proc_8cpp_a53437a5dfbba71ad72e8bbc406227c61}\label{_game___proc_8cpp_a53437a5dfbba71ad72e8bbc406227c61}} 
+\index{Game\_Proc.cpp@{Game\_Proc.cpp}!WinFlag2@{WinFlag2}}
+\index{WinFlag2@{WinFlag2}!Game\_Proc.cpp@{Game\_Proc.cpp}}
+\doxysubsubsection{\texorpdfstring{WinFlag2}{WinFlag2}}
+{\footnotesize\ttfamily bool Win\+Flag2 = false}
+

@@ -1,0 +1,111 @@
+\hypertarget{_display_wnd_proc_8cpp}{}\doxysection{Файл \+\_\+\+Game\+\_\+\+V\+\_\+1\+\_\+0/\+Graph/\+Display\+Wnd\+Proc.cpp}
+\label{_display_wnd_proc_8cpp}\index{\_Game\_V\_1\_0/Graph/DisplayWndProc.cpp@{\_Game\_V\_1\_0/Graph/DisplayWndProc.cpp}}
+{\ttfamily \#include \char`\"{}Game\+\_\+\+Lib\+\_\+\+V\+\_\+1\+\_\+0.\+hpp\char`\"{}}\newline
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_display_wnd_proc_8cpp_a32a3d5cc2264f37bce14101eaf9dff8f}{Load\+\_\+\+SImage}} (HWND hwnd, \mbox{\hyperlink{class_stone}{Stone}} $\ast$stone)
+\item 
+void \mbox{\hyperlink{_display_wnd_proc_8cpp_af2b049721139d49f58fa5d0922bd9872}{Delete\+\_\+\+SImage}} (HWND hwnd)
+\item 
+\mbox{\hyperlink{_game___proc___v__1__0_8hpp_a2fa95c6ba8373e1ee0eb99103b3ca5b1}{LRESULT}} \mbox{\hyperlink{_display_wnd_proc_8cpp_aa5d3bfea4d5b9625b8df968c8047238c}{Display\+Wnd\+Proc}} (HWND h\+Wnd, UINT Msg, WPARAM w\+Param, LPARAM l\+Param)
+\end{DoxyCompactItemize}
+\doxysubsection*{Переменные}
+\begin{DoxyCompactItemize}
+\item 
+HBITMAP \mbox{\hyperlink{_display_wnd_proc_8cpp_ac81f553b805f6470544cdf4b4c78e6c8}{Stone\+\_\+\+Image}}
+\item 
+RECT \mbox{\hyperlink{_display_wnd_proc_8cpp_a536606f56af8d14caa5862e27373bb44}{r}}
+\item 
+HBRUSH \mbox{\hyperlink{_display_wnd_proc_8cpp_ac8707d8fbaeb87098aa17b9b584c605a}{Brush}}
+\item 
+PWINDOWINFO \mbox{\hyperlink{_display_wnd_proc_8cpp_ab5f9fca1ce0f2c3ed79de3e84ac15f32}{GWindow\+\_\+\+Info}}
+\item 
+bool \mbox{\hyperlink{_display_wnd_proc_8cpp_a455cd44f39d1bb3c832ed91c02802e58}{Choose\+Stone\+Flag}} = false
+\item 
+int \mbox{\hyperlink{_display_wnd_proc_8cpp_a7441ef0865bcb3db9b8064dd7375c1ea}{id}}
+\item 
+\mbox{\hyperlink{class_board}{Board}} \mbox{\hyperlink{_display_wnd_proc_8cpp_afbd8847ac634c6034b4e663431ccb6f4}{Game\+\_\+\+Board}}
+\item 
+\mbox{\hyperlink{class_stone}{Stone}} \mbox{\hyperlink{_display_wnd_proc_8cpp_a3ee0cae35f4a8e5f94d6e9bf6c632e31}{S}}
+\item 
+\mbox{\hyperlink{class_game_window}{Game\+Window}} \mbox{\hyperlink{_display_wnd_proc_8cpp_a70648e1e005aae6da32a91f69ef6ba8b}{window}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{_display_wnd_proc_8cpp_af2b049721139d49f58fa5d0922bd9872}\label{_display_wnd_proc_8cpp_af2b049721139d49f58fa5d0922bd9872}} 
+\index{DisplayWndProc.cpp@{DisplayWndProc.cpp}!Delete\_SImage@{Delete\_SImage}}
+\index{Delete\_SImage@{Delete\_SImage}!DisplayWndProc.cpp@{DisplayWndProc.cpp}}
+\doxysubsubsection{\texorpdfstring{Delete\_SImage()}{Delete\_SImage()}}
+{\footnotesize\ttfamily void Delete\+\_\+\+SImage (\begin{DoxyParamCaption}\item[{HWND}]{hwnd }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_display_wnd_proc_8cpp_aa5d3bfea4d5b9625b8df968c8047238c}\label{_display_wnd_proc_8cpp_aa5d3bfea4d5b9625b8df968c8047238c}} 
+\index{DisplayWndProc.cpp@{DisplayWndProc.cpp}!DisplayWndProc@{DisplayWndProc}}
+\index{DisplayWndProc@{DisplayWndProc}!DisplayWndProc.cpp@{DisplayWndProc.cpp}}
+\doxysubsubsection{\texorpdfstring{DisplayWndProc()}{DisplayWndProc()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_game___proc___v__1__0_8hpp_a2fa95c6ba8373e1ee0eb99103b3ca5b1}{LRESULT}} Display\+Wnd\+Proc (\begin{DoxyParamCaption}\item[{HWND}]{h\+Wnd,  }\item[{UINT}]{Msg,  }\item[{WPARAM}]{w\+Param,  }\item[{LPARAM}]{l\+Param }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_display_wnd_proc_8cpp_a32a3d5cc2264f37bce14101eaf9dff8f}\label{_display_wnd_proc_8cpp_a32a3d5cc2264f37bce14101eaf9dff8f}} 
+\index{DisplayWndProc.cpp@{DisplayWndProc.cpp}!Load\_SImage@{Load\_SImage}}
+\index{Load\_SImage@{Load\_SImage}!DisplayWndProc.cpp@{DisplayWndProc.cpp}}
+\doxysubsubsection{\texorpdfstring{Load\_SImage()}{Load\_SImage()}}
+{\footnotesize\ttfamily void Load\+\_\+\+SImage (\begin{DoxyParamCaption}\item[{HWND}]{hwnd,  }\item[{\mbox{\hyperlink{class_stone}{Stone}} $\ast$}]{stone }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Переменные}
+\mbox{\Hypertarget{_display_wnd_proc_8cpp_ac8707d8fbaeb87098aa17b9b584c605a}\label{_display_wnd_proc_8cpp_ac8707d8fbaeb87098aa17b9b584c605a}} 
+\index{DisplayWndProc.cpp@{DisplayWndProc.cpp}!Brush@{Brush}}
+\index{Brush@{Brush}!DisplayWndProc.cpp@{DisplayWndProc.cpp}}
+\doxysubsubsection{\texorpdfstring{Brush}{Brush}}
+{\footnotesize\ttfamily HBRUSH Brush}
+
+\mbox{\Hypertarget{_display_wnd_proc_8cpp_a455cd44f39d1bb3c832ed91c02802e58}\label{_display_wnd_proc_8cpp_a455cd44f39d1bb3c832ed91c02802e58}} 
+\index{DisplayWndProc.cpp@{DisplayWndProc.cpp}!ChooseStoneFlag@{ChooseStoneFlag}}
+\index{ChooseStoneFlag@{ChooseStoneFlag}!DisplayWndProc.cpp@{DisplayWndProc.cpp}}
+\doxysubsubsection{\texorpdfstring{ChooseStoneFlag}{ChooseStoneFlag}}
+{\footnotesize\ttfamily bool Choose\+Stone\+Flag = false}
+
+\mbox{\Hypertarget{_display_wnd_proc_8cpp_afbd8847ac634c6034b4e663431ccb6f4}\label{_display_wnd_proc_8cpp_afbd8847ac634c6034b4e663431ccb6f4}} 
+\index{DisplayWndProc.cpp@{DisplayWndProc.cpp}!Game\_Board@{Game\_Board}}
+\index{Game\_Board@{Game\_Board}!DisplayWndProc.cpp@{DisplayWndProc.cpp}}
+\doxysubsubsection{\texorpdfstring{Game\_Board}{Game\_Board}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_board}{Board}} Game\+\_\+\+Board\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{_display_wnd_proc_8cpp_ab5f9fca1ce0f2c3ed79de3e84ac15f32}\label{_display_wnd_proc_8cpp_ab5f9fca1ce0f2c3ed79de3e84ac15f32}} 
+\index{DisplayWndProc.cpp@{DisplayWndProc.cpp}!GWindow\_Info@{GWindow\_Info}}
+\index{GWindow\_Info@{GWindow\_Info}!DisplayWndProc.cpp@{DisplayWndProc.cpp}}
+\doxysubsubsection{\texorpdfstring{GWindow\_Info}{GWindow\_Info}}
+{\footnotesize\ttfamily PWINDOWINFO GWindow\+\_\+\+Info}
+
+\mbox{\Hypertarget{_display_wnd_proc_8cpp_a7441ef0865bcb3db9b8064dd7375c1ea}\label{_display_wnd_proc_8cpp_a7441ef0865bcb3db9b8064dd7375c1ea}} 
+\index{DisplayWndProc.cpp@{DisplayWndProc.cpp}!id@{id}}
+\index{id@{id}!DisplayWndProc.cpp@{DisplayWndProc.cpp}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily int id}
+
+\mbox{\Hypertarget{_display_wnd_proc_8cpp_a536606f56af8d14caa5862e27373bb44}\label{_display_wnd_proc_8cpp_a536606f56af8d14caa5862e27373bb44}} 
+\index{DisplayWndProc.cpp@{DisplayWndProc.cpp}!r@{r}}
+\index{r@{r}!DisplayWndProc.cpp@{DisplayWndProc.cpp}}
+\doxysubsubsection{\texorpdfstring{r}{r}}
+{\footnotesize\ttfamily RECT r}
+
+\mbox{\Hypertarget{_display_wnd_proc_8cpp_a3ee0cae35f4a8e5f94d6e9bf6c632e31}\label{_display_wnd_proc_8cpp_a3ee0cae35f4a8e5f94d6e9bf6c632e31}} 
+\index{DisplayWndProc.cpp@{DisplayWndProc.cpp}!S@{S}}
+\index{S@{S}!DisplayWndProc.cpp@{DisplayWndProc.cpp}}
+\doxysubsubsection{\texorpdfstring{S}{S}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_stone}{Stone}} S\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{_display_wnd_proc_8cpp_ac81f553b805f6470544cdf4b4c78e6c8}\label{_display_wnd_proc_8cpp_ac81f553b805f6470544cdf4b4c78e6c8}} 
+\index{DisplayWndProc.cpp@{DisplayWndProc.cpp}!Stone\_Image@{Stone\_Image}}
+\index{Stone\_Image@{Stone\_Image}!DisplayWndProc.cpp@{DisplayWndProc.cpp}}
+\doxysubsubsection{\texorpdfstring{Stone\_Image}{Stone\_Image}}
+{\footnotesize\ttfamily HBITMAP Stone\+\_\+\+Image}
+
+\mbox{\Hypertarget{_display_wnd_proc_8cpp_a70648e1e005aae6da32a91f69ef6ba8b}\label{_display_wnd_proc_8cpp_a70648e1e005aae6da32a91f69ef6ba8b}} 
+\index{DisplayWndProc.cpp@{DisplayWndProc.cpp}!window@{window}}
+\index{window@{window}!DisplayWndProc.cpp@{DisplayWndProc.cpp}}
+\doxysubsubsection{\texorpdfstring{window}{window}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_window}{Game\+Window}} window\hspace{0.3cm}{\ttfamily [extern]}}
+
